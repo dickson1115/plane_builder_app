@@ -1,0 +1,33 @@
+@import 'globalVariables.sass'
+
+#sideBarExpanded
+    min-width: $sideBarExpandedWidth
+    max-width: $sideBarExpandedWidth
+    background: $secondary
+    transition: all 0.3s
+    z-index: -1
+    font-family: $fontFamily
+    color: $textColor
+    margin-left: -350px
+    padding: 20px
+
+#sideBarExpanded.active
+    margin-left: 0px
+
+.sideBarExpandedHeader
+
+.sideBarExpandedHeader h3
+    font-family: $fontFamily
+    color: $textColor
+
+.svgButton
+    width: 25px
+    hight: 25px
+    display: flex
+    justify-content: center
+    padding: 0px
+    align-items: center
+    border-radius: 50%
+
+.svgButton:hover
+    background-color: $primary

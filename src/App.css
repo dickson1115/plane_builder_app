@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "BNRegular";   /*Can be any text*/
+  src: local("BebasNeueRegular"),
+    url("./Fonts/BebasNeueRegular.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap');

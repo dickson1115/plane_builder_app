@@ -1,0 +1,23 @@
+#sidebarCollapsed {
+  min-width: 75px;
+  max-width: 75px;
+  background: rgb(255, 248, 233);
+  transition: all 0.3s;
+}
+
+.svgButton {
+  border-radius: 30% 0% 0% 30%;
+  border: 0px;
+  background-color: rgb(255, 248, 233);
+  padding: 15px;
+}
+
+.svgButton svg:hover {
+  color: rgba(0, 0, 0, 0.725);
+  transition: all 0.3s;
+}
+
+.svgButton:active {
+  background-color: rgb(247, 229, 191);
+  transition: all 0.3s;
+}/*# sourceMappingURL=SideBarCollapsed.module.css.map */

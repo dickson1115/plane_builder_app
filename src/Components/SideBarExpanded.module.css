@@ -1,0 +1,34 @@
+#sideBarExpanded {
+  min-width: 350px;
+  max-width: 350px;
+  background: rgb(247, 229, 191);
+  transition: all 0.3s;
+  z-index: -1;
+  font-family: "BNRegular";
+  color: rgba(0, 0, 0, 0.55);
+  margin-left: -350px;
+  padding: 20px;
+}
+
+#sideBarExpanded.active {
+  margin-left: 0px;
+}
+
+.sideBarExpandedHeader h3 {
+  font-family: "BNRegular";
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.svgButton {
+  width: 25px;
+  hight: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.svgButton:hover {
+  background-color: rgb(255, 248, 233);
+}/*# sourceMappingURL=SideBarExpanded.module.css.map */

@@ -1,0 +1,34 @@
+@import './globalVariables.sass'
+
+$sidebarCollapsedWidth: 75px
+$sidebarCollapesdBackgroundColor: $primary
+$svgButtonColorChange: $secondary
+
+#sidebarCollapsed
+    min-width: $sidebarCollapsedWidth
+    max-width: $sidebarCollapsedWidth
+    background: $primary
+    transition: all 0.3s
+
+.svgButton
+    border-radius: 30% 0% 0% 30%
+    border: 0px
+    // display: flex
+    // justify-content: center
+    background-color: $primary
+    padding: 15px
+
+.svgButton svg:hover
+    color: $textColorHover
+    transition: all 0.3s
+
+
+.svgButton:active
+    background-color: $secondary
+    transition: all 0.3s
+
+
+// .btn
+//     background-color: red
+// .svgButton svg
+//     border-radius: 30% 0% 0% 30%
