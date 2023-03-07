@@ -1,14 +1,11 @@
 @import './globalVariables.sass'
 
-$sidebarCollapsedWidth: 75px
-$sidebarCollapesdBackgroundColor: $primary
-$svgButtonColorChange: $secondary
-
 #sidebarCollapsed
-    min-width: $sidebarCollapsedWidth
-    max-width: $sidebarCollapsedWidth
+    min-width: $sideBarCollapsedWidth
+    max-width: $sideBarCollapsedWidth
     background: $primary
     transition: all 0.3s
+    height: 100vh
 
 .svgButton
     border-radius: 30% 0% 0% 30%
@@ -16,11 +13,13 @@ $svgButtonColorChange: $secondary
     // display: flex
     // justify-content: center
     background-color: $primary
-    padding: 15px
+    padding: 5px
 
-.svgButton svg:hover
-    color: $textColorHover
-    transition: all 0.3s
+
+.svgButton:hover
+    svg
+        color: $textColorHover
+        transition: all 0.3s
 
 
 .svgButton:active

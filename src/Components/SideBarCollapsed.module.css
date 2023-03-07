@@ -1,19 +1,20 @@
 #sidebarCollapsed {
-  min-width: 75px;
-  max-width: 75px;
+  min-width: 50px;
+  max-width: 50px;
   background: rgb(255, 248, 233);
   transition: all 0.3s;
+  height: 100vh;
 }
 
 .svgButton {
   border-radius: 30% 0% 0% 30%;
   border: 0px;
   background-color: rgb(255, 248, 233);
-  padding: 15px;
+  padding: 5px;
 }
 
-.svgButton svg:hover {
-  color: rgba(0, 0, 0, 0.725);
+.svgButton:hover svg {
+  color: rgba(0, 0, 0, 0.7);
   transition: all 0.3s;
 }
 

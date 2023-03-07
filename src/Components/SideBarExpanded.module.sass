@@ -10,9 +10,11 @@
     color: $textColor
     margin-left: -350px
     padding: 20px
+    position: fixed
+    height: 100vh
 
 #sideBarExpanded.active
-    margin-left: 0px
+    margin-left: $sideBarCollapsedWidth
 
 .sideBarExpandedHeader
 
@@ -28,6 +30,21 @@
     padding: 0px
     align-items: center
     border-radius: 50%
-
+    border-width: 2px
+    border-color: $secondary
+    background-color: $secondary 
+    border-style: solid
+    
 .svgButton:hover
     background-color: $primary
+    transition: all 0.3s
+
+.svgButton:hover
+    svg
+        color: $textColorHover
+
+.svgButton:active
+    color: $textColor
+    background-color: $secondary
+    border-color: $textColor
+    transition: all 0.3s

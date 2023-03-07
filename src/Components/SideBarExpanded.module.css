@@ -1,6 +1,6 @@
 #sideBarExpanded {
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 200px;
+  max-width: 200px;
   background: rgb(247, 229, 191);
   transition: all 0.3s;
   z-index: -1;
@@ -8,10 +8,12 @@
   color: rgba(0, 0, 0, 0.55);
   margin-left: -350px;
   padding: 20px;
+  position: fixed;
+  height: 100vh;
 }
 
 #sideBarExpanded.active {
-  margin-left: 0px;
+  margin-left: 50px;
 }
 
 .sideBarExpandedHeader h3 {
@@ -27,8 +29,24 @@
   padding: 0px;
   align-items: center;
   border-radius: 50%;
+  border-width: 2px;
+  border-color: rgb(247, 229, 191);
+  background-color: rgb(247, 229, 191);
+  border-style: solid;
 }
 
 .svgButton:hover {
   background-color: rgb(255, 248, 233);
+  transition: all 0.3s;
+}
+
+.svgButton:hover svg {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.svgButton:active {
+  color: rgba(0, 0, 0, 0.55);
+  background-color: rgb(247, 229, 191);
+  border-color: rgba(0, 0, 0, 0.55);
+  transition: all 0.3s;
 }/*# sourceMappingURL=SideBarExpanded.module.css.map */

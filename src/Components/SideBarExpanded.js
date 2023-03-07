@@ -1,18 +1,19 @@
 import React from 'react'
 import styles from './SideBarExpanded.module.css'
 import SvgButton from './SvgButton'
+
 function SideBarExpanded(props) {
     return (
-        <nav id={styles.sideBarExpanded} className={styles.active}>
+        <nav id={styles.sideBarExpanded} className={props.active ? styles.active : ""}>
             <div className="headerBar row">
-                <div className="col" />
-                <div className={"col " + styles.sideBarExpandedHeader}>
-                    <h3>Components</h3>
+                <div className="col p-0" />
+                <div className={"col p-0" + styles.sideBarExpandedHeader}>
+                    <h4>Components</h4>
                 </div>
-                <div class="col d-flex justify-content-end">
+                <div className="col d-flex justify-content-end p-0">
                     <div>
-                        <SvgButton className={"btn " + styles.svgButton} svgColor="rgba(0, 0, 0, 0.55)">
-                        <path clipRule="evenodd" fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"></path>
+                        <SvgButton className={styles.svgButton} onClick={props.onClick}>
+                            <path clipRule="evenodd" fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"></path>
                         </SvgButton>
                     </div>
 

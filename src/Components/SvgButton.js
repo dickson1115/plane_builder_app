@@ -4,7 +4,7 @@ import styles from './SvgButton.module.css'
 // Use this component by wrappoing a list of path elements (see example in SideBar.js)
 function SvgButton(props) {
   return (
-      <button className={props.className + " " + styles.svgButton}>
+      <button className={props.className + " " + styles.svgButton} buttonIndex={props.buttonIndex} onClick={props.onClick}>
         <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
           className="h-32 w-32 [color]-$fill-color"
           style={{ strokeWidth: "var(--grid-item-icon-stroke-width)", transform: "scale(var(--grid-item-icon-scale))" }}>
