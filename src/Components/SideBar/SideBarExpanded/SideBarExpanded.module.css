@@ -1,24 +1,35 @@
 #sideBarExpanded {
   min-width: 200px;
   max-width: 200px;
-  background: rgb(247, 229, 191);
+  background: rgb(251, 240, 217);
   transition: all 0.3s;
   z-index: -1;
   font-family: "BNRegular";
   color: rgba(0, 0, 0, 0.55);
-  margin-left: -350px;
-  padding: 20px;
+  margin-left: -250px;
   position: fixed;
   height: 100vh;
 }
 
 #sideBarExpanded.active {
   margin-left: 50px;
+  transition: all 0.3s;
 }
 
-.sideBarExpandedHeader h3 {
+.sideBarExpandedHeader {
+  height: 35px;
+}
+
+.sideBarExpandedHeader h4 {
   font-family: "BNRegular";
   color: rgba(0, 0, 0, 0.55);
+}
+
+.headerBar {
+  background-color: rgb(255, 230, 186);
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .svgButton {
@@ -30,8 +41,8 @@
   align-items: center;
   border-radius: 50%;
   border-width: 2px;
-  border-color: rgb(247, 229, 191);
-  background-color: rgb(247, 229, 191);
+  border-color: rgb(255, 230, 186);
+  background-color: rgb(255, 230, 186);
   border-style: solid;
 }
 
@@ -46,7 +57,7 @@
 
 .svgButton:active {
   color: rgba(0, 0, 0, 0.55);
-  background-color: rgb(247, 229, 191);
+  background-color: rgb(251, 240, 217);
   border-color: rgba(0, 0, 0, 0.55);
   transition: all 0.3s;
 }/*# sourceMappingURL=SideBarExpanded.module.css.map */

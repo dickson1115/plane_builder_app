@@ -4,6 +4,11 @@
   background: rgb(255, 248, 233);
   transition: all 0.3s;
   height: 100vh;
+  margin-left: -50px;
+}
+
+#sidebarCollapsed.active {
+  margin-left: 0px;
 }
 
 .svgButton {
@@ -19,6 +24,11 @@
 }
 
 .svgButton:active {
-  background-color: rgb(247, 229, 191);
+  background-color: rgb(251, 240, 217);
+  transition: all 0.3s;
+}
+
+.svgButton.active {
+  background-color: rgb(251, 240, 217);
   transition: all 0.3s;
 }/*# sourceMappingURL=SideBarCollapsed.module.css.map */

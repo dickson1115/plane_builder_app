@@ -1,27 +1,33 @@
 import React from 'react'
 import styles from './SideBarExpanded.module.css'
-import SvgButton from './SvgButton'
+import SvgButton from '../../SvgButton'
 
 function SideBarExpanded(props) {
-    return (
-        <nav id={styles.sideBarExpanded} className={props.active ? styles.active : ""}>
-            <div className="headerBar row">
-                <div className="col p-0" />
-                <div className={"col p-0" + styles.sideBarExpandedHeader}>
-                    <h4>Components</h4>
-                </div>
-                <div className="col d-flex justify-content-end p-0">
-                    <div>
-                        <SvgButton className={styles.svgButton} onClick={props.onClick}>
-                            <path clipRule="evenodd" fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"></path>
-                        </SvgButton>
-                    </div>
-
-                </div>
+  return (
+    <nav id={styles.sideBarExpanded} className={props.active ? styles.active : ""}>
+      <div className="container">
+        <div className={styles.headerBar + " row mb-3"}>
+          <div className="col p-0 " />
+          <div className={"col p-0 " + styles.sideBarExpandedHeader}>
+            <h4>Components</h4>
+          </div>
+          <div className="col d-flex justify-content-end p-0">
+            <div>
+              <SvgButton className={styles.svgButton} onClick={props.onClick}>
+                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  className="h-32 w-32 [color]-$fill-color"
+                  style={{ strokeWidth: "var(--grid-item-icon-stroke-width)", transform: "scale(var(--grid-item-icon-scale))" }}>
+                  <path clipRule="evenodd" fillRule="evenodd" d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"></path>
+                </svg>
+              </SvgButton>
             </div>
-            {props.children}
-        </nav>
-    )
+
+          </div>
+        </div>
+        {props.children}
+      </div>
+    </nav>
+  )
 }
 //d-flex justify-content-center
 export default SideBarExpanded

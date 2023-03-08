@@ -1,13 +1,17 @@
+import {useContext} from 'react';
 import { NavLink } from "react-router-dom";
-import logo from "../Images/logo-navbar.png";
+import AuthContext from "../../AuthContext/AuthContext";
+// import logo from "../../Images/logo_navbar.png";
 const NavBar = ({ currentPage }) => {
     const navBarItems = ["Home", "Tutorial", "Builder", "Explore", "About"]
+    const { images } = useContext(AuthContext);
     return (
+
         //style={{backgroundColor: "#89939E"}} *for custom navbar colors
        <nav className="navbar fixed-top navbar-expand-lg" style={{ backgroundColor: "rgb(255 248 233)"}}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#" style={{ fontFamily: "BNRegular"}}>
-                    <img src={logo} width="50" height="50" alt="Logo" />
+                    <img src={images["logo_navbar.png"]} width="50" height="50" alt="Logo" />
                     Plane Builder
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

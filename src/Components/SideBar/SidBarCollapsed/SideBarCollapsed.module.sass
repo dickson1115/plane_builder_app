@@ -1,4 +1,4 @@
-@import './globalVariables.sass'
+@import '../../globalVariables.sass'
 
 #sidebarCollapsed
     min-width: $sideBarCollapsedWidth
@@ -6,6 +6,11 @@
     background: $primary
     transition: all 0.3s
     height: 100vh
+    margin-left: -$sideBarCollapsedWidth
+
+
+#sidebarCollapsed.active
+    margin-left: 0px
 
 .svgButton
     border-radius: 30% 0% 0% 30%
@@ -26,7 +31,9 @@
     background-color: $secondary
     transition: all 0.3s
 
-
+.svgButton.active
+    background-color: $secondary
+    transition: all 0.3s
 // .btn
 //     background-color: red
 // .svgButton svg

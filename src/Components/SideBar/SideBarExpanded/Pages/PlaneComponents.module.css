@@ -1,0 +1,43 @@
+.svgButton:hover {
+  background: rgb(255, 248, 233);
+}
+
+.svgButton {
+  padding: 0px;
+  align-items: center;
+}
+
+.container {
+  margin: 10px;
+}
+
+.container path, ellipse {
+  stroke: rgba(0, 0, 0, 0.55);
+}
+
+.container div {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+}
+
+.btnGroup {
+  background-color: rgb(255, 230, 186);
+  color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+}
+
+.btn {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.btn:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.btn:focus {
+  background-color: rgb(251, 240, 217);
+}/*# sourceMappingURL=PlaneComponents.module.css.map */
