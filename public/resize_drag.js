@@ -1,12 +1,12 @@
-import interact from 'interactjs'
+// import interact from 'interactjs'
 
-interact('.resize_drag_element')
+interact('.resize-drag')
   .resizable({
     // resize from all edges and corners
     edges: { left: true, right: true, bottom: true, top: true },
 
     listeners: {
-      move (event) {
+      move(event) {
         var target = event.target
         var x = (parseFloat(target.getAttribute('data-x')) || 0)
         var y = (parseFloat(target.getAttribute('data-y')) || 0)
@@ -41,7 +41,7 @@ interact('.resize_drag_element')
     inertia: true
   })
 
-  interact('.resize_drag_element')
+interact('.resize-drag')
   .draggable({
     // enable inertial throwing
     inertia: true,
@@ -60,19 +60,19 @@ interact('.resize_drag_element')
       move: dragMoveListener,
 
       // call this function on every dragend event
-      end (event) {
+      end(event) {
         var textEl = event.target.querySelector('p')
 
         textEl && (textEl.textContent =
           'moved a distance of ' +
           (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
-                     Math.pow(event.pageY - event.y0, 2) | 0))
+            Math.pow(event.pageY - event.y0, 2) | 0))
             .toFixed(2) + 'px')
       }
     }
   })
 
-function dragMoveListener (event) {
+function dragMoveListener(event) {
   var target = event.target
   // keep the dragged position in the data-x/data-y attributes
   var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx

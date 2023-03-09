@@ -18,6 +18,15 @@ function SideBar() {
 
   return (
     <div className={styles.wrapper}>
+      <SideBarExpanded active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
+        <PlaneComponents key="1" />
+      </SideBarExpanded>
+      <SideBarExpanded active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
+        <PlaneComponents key="2" />
+      </SideBarExpanded>
+      <SideBarExpanded active={expandedSiderBar === "3" ? true : false} onClick={handleCollapseSideBar}>
+        <PlaneComponents key="3" />
+      </SideBarExpanded>
       <SideBarCollapsed active={true}>
         <SvgButton button_index="1" className="svgButton" active={expandedSiderBar === "1" ? true : false} onClick={handleExpandSideBar}>
           <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -35,16 +44,6 @@ function SideBar() {
           </svg>
         </SvgButton>
       </SideBarCollapsed>
-
-      <SideBarExpanded active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="1" />
-      </SideBarExpanded>
-      <SideBarExpanded active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="2" />
-      </SideBarExpanded>
-      <SideBarExpanded active={expandedSiderBar === "3" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="3" />
-      </SideBarExpanded>
     </div>
   )
 }

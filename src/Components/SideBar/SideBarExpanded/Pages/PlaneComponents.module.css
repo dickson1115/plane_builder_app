@@ -1,10 +1,18 @@
+.svgButton:active {
+  border-color: rgba(0, 0, 0, 0.55);
+}
+
 .svgButton:hover {
   background: rgb(255, 248, 233);
+  transition: all 0.3s;
 }
 
 .svgButton {
-  padding: 0px;
+  padding: 10px;
   align-items: center;
+  border-radius: 10px;
+  border: solid 3px rgba(0, 0, 0, 0);
+  height: 115;
 }
 
 .container {
@@ -22,6 +30,9 @@
 .title {
   justify-content: center;
   display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .btnGroup {

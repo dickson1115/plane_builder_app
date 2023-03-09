@@ -1,13 +1,25 @@
 
 @import '../../../globalVariables.sass'
+.svgButton:active
+    border-color: $textColor
+
 .svgButton:hover
     background: $primary
+    transition: all 0.3s 
 
 .svgButton
     // display: flex
     // justify-content: center
-    padding: 0px
+    padding: 10px
     align-items: center
+    border-radius: 10px
+    border: solid 3px rgba(0, 0, 0, 0)
+    height: 115
+    // display: flex
+    // justify-content: center
+
+// .svgButton svg
+//     height: 65px
 
 .container
     margin: 10px
@@ -23,6 +35,8 @@
 .title
     justify-content: center
     display: flex
+    // touch-action: none
+    user-select: none
 
     
 .btnGroup

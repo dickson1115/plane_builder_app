@@ -5,6 +5,7 @@
   transition: all 0.3s;
   height: 100vh;
   margin-left: -50px;
+  position: fixed;
 }
 
 #sidebarCollapsed.active {
@@ -15,7 +16,7 @@
   border-radius: 30% 0% 0% 30%;
   border: 0px;
   background-color: rgb(255, 248, 233);
-  padding: 5px;
+  padding: 5%;
 }
 
 .svgButton:hover svg {

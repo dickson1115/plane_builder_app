@@ -15,7 +15,7 @@ function PlaneComponents({ componentCategory, imagePath }) {
       <div className={styles.container} >
         <div className="row">
           <div className={styles.svgButton}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 36" >
               <defs />
               <path id="shape0" transform="translate(10, 6)" fill="none" strokeWidth="2" strokeLinecap="square" strokeLinejoin="bevel" d="M110.171 18.5119L10.157 0.491468L0 0.163823L8.51877 0.163823L110.171 8.84642L204.942 0.163823L215.263 0L205.433 0.491468Z" />
             </svg>
@@ -24,8 +24,7 @@ function PlaneComponents({ componentCategory, imagePath }) {
         </div>
         <div className="row">
           <div className={"col " + styles.svgButton}>
-            <svg fill="rgba(0, 0, 0, 0.55)" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              className="[color]-$fill-color">
+            <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" >
               <ellipse id="shape0" transform="translate(20, 20)" rx="90" ry="90" cx="100" cy="101" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" />
               <ellipse id="shape1" transform="translate(45, 47)" rx="70" ry="70" cx="75" cy="73" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" />
             </svg>
@@ -33,7 +32,7 @@ function PlaneComponents({ componentCategory, imagePath }) {
           </div>
 
           <div className={"col " + styles.svgButton}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" >
               <path id="shape0" transform="translate(27, 65)" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" d="M55.44 0.36L0 0C0 77.04 0 115.56 0 115.56L54 115.56L54 115.56L54 115.56Z" />
               <path id="shape1" transform="translate(157, 65)" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" d="M2.16 113.04L59.04 113.04L58.68 0L0 0.36L0 112.68" />
               <path id="shape2" transform="translate(84, 108)" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" d="M0 0L70.56 0" />
@@ -44,7 +43,7 @@ function PlaneComponents({ componentCategory, imagePath }) {
         </div>
         <div className="row">
           <div className={"col " + styles.svgButton}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" >
               <defs />
               <ellipse id="shape0" transform="translate(7.44, 7.92)" rx="112.32" ry="111.96" cx="112.32" cy="111.96" fill="none" strokeWidth="6" strokeLinecap="square" strokeLinejoin="bevel" />
               <ellipse id="shape1" transform="translate(74.4, 110.399999760961)" rx="45.6" ry="44.1599968207885" cx="45.6" cy="44.1599968207885" fill="none" strokeWidth="6" strokeLinecap="square" strokeLinejoin="bevel" />
@@ -58,11 +57,14 @@ function PlaneComponents({ componentCategory, imagePath }) {
             <div className={styles.title}>Fuselage</div>
           </div>
 
-          <div className={"col " + styles.svgButton}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
-              <defs />
-              <path id="shape0" transform="translate(120, 20.9252669039146)" fill="none" strokeWidth="9.6" strokeLinecap="square" strokeLinejoin="miter" strokeMiterlimit="2" d="M0 0L0 198.149" />
-            </svg>
+          <div className={"col " + styles.svgButton} >
+            <div className="d-flex justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" >
+                <defs />
+                <path id="shape0" transform="translate(120, 20.9252669039146)" fill="none" strokeWidth="9.6" strokeLinecap="square" strokeLinejoin="miter" strokeMiterlimit="2" d="M0 0L0 198.149" />
+              </svg>
+            </div>
+
             <div className={styles.title}>Strut</div>
           </div>
         </div>

@@ -1,8 +1,7 @@
-.resize_drag_element {
+.resize_drag {
   width: 200px;
+  height: 200px;
   border-radius: 8px;
-  padding: 20px;
-  margin: 1rem;
   background-color: #29e;
   color: white;
   font-size: 20px;
@@ -14,11 +13,11 @@
   box-sizing: border-box;
 }
 
-.resize_drag_element:focus{
+.resize_drag:focus{
   outline: 5px solid red;
 }
 
-.resize_drag_element:active{
+.resize_drag:active{
   outline: 5px solid red;
 }
 
