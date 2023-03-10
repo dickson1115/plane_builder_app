@@ -1,4 +1,4 @@
-@import '../../globalVariables.sass' 
+@import '../../Variables/globalVariables.sass' 
 
 .builderCanvas
   position: relative
@@ -8,3 +8,5 @@
   border: solid 5px $canvasColor
   background-color: $canvasColor
 
+.interactableItem
+  transform: translate(calc($sideBarCollapsedWidth + $sideBarExpandedWidth), 0)

@@ -1,5 +1,5 @@
 .svgButton:active {
-  border-color: rgba(0, 0, 0, 0.55);
+  border-color: rgb(79, 77, 72);
 }
 
 .svgButton:hover {
@@ -13,6 +13,7 @@
   border-radius: 10px;
   border: solid 3px rgba(0, 0, 0, 0);
   height: 115;
+  background: rgb(251, 240, 217);
 }
 
 .container {
@@ -20,11 +21,11 @@
 }
 
 .container path, ellipse {
-  stroke: rgba(0, 0, 0, 0.55);
+  stroke: rgb(79, 77, 72);
 }
 
 .container div {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(79, 77, 72);
 }
 
 .title {
@@ -37,16 +38,16 @@
 
 .btnGroup {
   background-color: rgb(255, 230, 186);
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(79, 77, 72);
   width: 100%;
 }
 
 .btn {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(79, 77, 72);
 }
 
 .btn:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(32, 31, 29);
 }
 
 .btn:focus {

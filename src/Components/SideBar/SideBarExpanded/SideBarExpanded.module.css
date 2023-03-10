@@ -4,7 +4,7 @@
   background: rgb(251, 240, 217);
   transition: all 0.3s;
   font-family: "BNRegular";
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(79, 77, 72);
   margin-left: -250px;
   position: fixed;
   height: 100vh;
@@ -17,7 +17,7 @@
 
 .sideBarExpandedHeader h4 {
   font-family: "BNRegular";
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(79, 77, 72);
 }
 
 .headerBar {
@@ -47,12 +47,12 @@
 }
 
 .svgButton:hover svg {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(32, 31, 29);
 }
 
 .svgButton:active {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgb(79, 77, 72);
   background-color: rgb(251, 240, 217);
-  border-color: rgba(0, 0, 0, 0.55);
+  border-color: rgb(79, 77, 72);
   transition: all 0.3s;
 }/*# sourceMappingURL=SideBarExpanded.module.css.map */

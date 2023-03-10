@@ -1,40 +1,35 @@
 import React from "react";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import About from "./Components/About";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
 import Builder from "./Components/Builder/Builder";
-import Contact from "./Components/Contact";
-import Explore from "./Components/Explore";
+import Explore from "./Components/Pages/Explore";
 import NavBar from "./Components/NavBar/NavBar";
-import Tutorial from "./Components/Tutorial";
-import * as Constants from "./Constants/Constants";
+import Tutorial from "./Components/Pages/Tutorial";
 import BasicExample from "./BasicExample";
 import "./Fonts/BebasNeueRegular.ttf";
 import "./App.css";
-import SideBar from "./Components/SideBar/SideBar";
-import SideBarExpanded from "./Components/SideBar/SideBarExpanded/SideBarExpanded";
-import SideBarCollapsed from "./Components/SideBar/SidBarCollapsed/SideBarCollapsed";
-import SvgButton from "./Components/SvgButton";
 import AuthContext from "./AuthContext/AuthContext";
+import Login from "./Components/Login/Login";
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
-  // handleChangePage(e){
-  //   e.preventDefault();
-  //   console.log(e);
+
+  // Function for importing all Images
   function importAll(r) {
     let images = {};
     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
     return images
   }
   const images = importAll(require.context('./Images', false, /\.(png|jpe?g|svg)$/));
-  // }
+  console.log(images);
   return (
     <AuthContext.Provider value={{
       images: images
     }}>
       <BrowserRouter>
         <NavBar currentPage={currentPage} />
+        <Login/>
         <Routes>
           <Route exact path="/Home" element={<Home />} />
           <Route exact path="/Tutorial" element={<Tutorial />} />

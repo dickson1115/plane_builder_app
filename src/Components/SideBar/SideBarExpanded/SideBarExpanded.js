@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './SideBarExpanded.module.css'
-import SvgButton from '../../SvgButton'
+import SvgButton from '../../SvgButton/SvgButton'
 
 function SideBarExpanded(props) {
   return (

@@ -1,10 +1,12 @@
-@import '../../../globalVariables'
+@import '../../../Variables/globalVariables'
 .interactableItem
     position: absolute
     border:  solid 3px rgba(0, 0, 0, 0)
     border-radius: 10px
     z-index: 0
     margin: 0px
+    height: 100px
+    width: 100px
     // background-color: $canvasColor
 
 // .interactableItem:hover
@@ -12,8 +14,9 @@
 
 .interactableItem:hover
     border-color: $textColor
-    // background-color: $bodyColor
+    // transition: all .3s
+    background-color: rgb(241, 232, 211, 0.5)
 
 .interactableItem path,ellipse
-    fill: $canvasColor
+    fill: $primary
     stroke: $textColor

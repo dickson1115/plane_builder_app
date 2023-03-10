@@ -1,0 +1,8 @@
+.svgButton svg, .svgButton div {
+  color: rgb(79, 77, 72);
+  pointer-events: none;
+}
+
+.svgButton {
+  padding: 0px;
+}/*# sourceMappingURL=SvgButton.module.css.map */

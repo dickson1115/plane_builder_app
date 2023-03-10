@@ -1,1 +1,1 @@
-{"version":3,"sources":["BuilderCanvas.module.sass","../../globalVariables.sass","BuilderCanvas.module.css"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,aCYa;EDXb,YCYY;EDXZ,gCAAA;EACA,oCAAA;EACA,oCCUY;ACXd","file":"BuilderCanvas.module.css"}
+{"version":3,"sources":["BuilderCanvas.module.sass","../../Variables/globalVariables.sass","BuilderCanvas.module.css"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,aCYa;EDXb,YCYY;EDXZ,gCAAA;EACA,oCAAA;EACA,oCCUY;ACXd;;AFGA;EACE,8BAAA;AEAF","file":"BuilderCanvas.module.css"}

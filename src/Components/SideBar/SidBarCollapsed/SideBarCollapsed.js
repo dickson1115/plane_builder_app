@@ -12,7 +12,8 @@ function SideBarCollapsed(props) {
           if (child.props.className !== "svgButton") return;
           const active = (child.props.active === true) ? styles.active : "";
           return React.cloneElement(child, {
-            className: `${child.props.className + " " + active + " " + styles.svgButton}`,
+            // className: `${child.props.className + " " + active + " " + styles.svgButton}`,
+            className: child.props.className + " " + active + " " + styles.svgButton,
           });
         })}
       </div>

@@ -3,8 +3,8 @@ import styles from "./SideBar.module.css"
 import SideBarExpanded from "./SideBarExpanded/SideBarExpanded";
 import SideBarCollapsed from "./SidBarCollapsed/SideBarCollapsed";
 import PlaneComponents from "./SideBarExpanded/Pages/PlaneComponents";
-import SvgButton from '../SvgButton';
-function SideBar() {
+import SvgButton from '../SvgButton/SvgButton';
+function SideBar(props) {
   const sideBarItems = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
   const [expandedSiderBar, setExpandedSiderBar] = useState("");
   const handleExpandSideBar = (event) => {
@@ -19,7 +19,7 @@ function SideBar() {
   return (
     <div className={styles.wrapper}>
       <SideBarExpanded active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="1" />
+        <PlaneComponents key="1" onClick={props.onClick} />
       </SideBarExpanded>
       <SideBarExpanded active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
         <PlaneComponents key="2" />
@@ -41,6 +41,13 @@ function SideBar() {
         <SvgButton button_index="2" className="svgButton" active={expandedSiderBar === "2" ? true : false} onClick={handleExpandSideBar}>
           <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path clipRule="evenodd" fillRule="evenodd" d="M.99 5.24A2.25 2.25 0 013.25 3h13.5A2.25 2.25 0 0119 5.25l.01 9.5A2.25 2.25 0 0116.76 17H3.26A2.267 2.267 0 011 14.74l-.01-9.5zm8.26 9.52v-.625a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75v.615c0 .414.336.75.75.75h5.373a.75.75 0 00.627-.74zm1.5 0a.75.75 0 00.627.74h5.373a.75.75 0 00.75-.75v-.615a.75.75 0 00-.75-.75H11.5a.75.75 0 00-.75.75v.625zm6.75-3.63v-.625a.75.75 0 00-.75-.75H11.5a.75.75 0 00-.75.75v.625c0 .414.336.75.75.75h5.25a.75.75 0 00.75-.75zm-8.25 0v-.625a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75v.625c0 .414.336.75.75.75H8.5a.75.75 0 00.75-.75zM17.5 7.5v-.625a.75.75 0 00-.75-.75H11.5a.75.75 0 00-.75.75V7.5c0 .414.336.75.75.75h5.25a.75.75 0 00.75-.75zm-8.25 0v-.625a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75V7.5c0 .414.336.75.75.75H8.5a.75.75 0 00.75-.75z"></path>
+          </svg>
+        </SvgButton>
+
+        <SvgButton className="svgButton">
+          <svg fill="currentColor" viewBox="0 0 30 30">
+            <path d="M22,4h-2v6c0,0.552-0.448,1-1,1h-9c-0.552,0-1-0.448-1-1V4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18  c1.105,0,2-0.895,2-2V8L22,4z M22,24H8v-6c0-1.105,0.895-2,2-2h10c1.105,0,2,0.895,2,2V24z" />
+            <rect height="5" width="2" x="16" y="4" />
           </svg>
         </SvgButton>
       </SideBarCollapsed>

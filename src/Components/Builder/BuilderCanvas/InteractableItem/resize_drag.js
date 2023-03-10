@@ -1,5 +1,7 @@
 import interact from 'interactjs'
 
+// This is a modified version of the orginal file but some of the chnages has been forgotten
+// Attribute data-x and data-y are changed to data_x and data_y because I don't know how to use "-" within am object's name
 interact('.resize_drag')
   .resizable({
     // resize from all edges and corners
@@ -8,8 +10,8 @@ interact('.resize_drag')
     listeners: {
       move(event) {
         var target = event.target
-        var x = (parseFloat(target.getAttribute('data-x')) || 0)
-        var y = (parseFloat(target.getAttribute('data-y')) || 0)
+        var x = (parseFloat(target.getAttribute('data_x')) || 0)
+        var y = (parseFloat(target.getAttribute('data_y')) || 0)
 
         // update the element's style
         target.style.width = event.rect.width + 'px'
@@ -21,8 +23,8 @@ interact('.resize_drag')
 
         target.style.transform = 'translate(' + x + 'px,' + y + 'px)'
 
-        target.setAttribute('data-x', x)
-        target.setAttribute('data-y', y)
+        target.setAttribute('data_x', x)
+        target.setAttribute('data_y', y)
         // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height)
       }
     },
@@ -75,15 +77,15 @@ interact('.resize_drag')
 function dragMoveListener(event) {
   var target = event.target
   // keep the dragged position in the data-x/data-y attributes
-  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
-  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+  var x = (parseFloat(target.getAttribute('data_x')) || 0) + event.dx
+  var y = (parseFloat(target.getAttribute('data_y')) || 0) + event.dy
 
   // translate the element
   target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
 
   // update the posiion attributes
-  target.setAttribute('data-x', x)
-  target.setAttribute('data-y', y)
+  target.setAttribute('data_x', x)
+  target.setAttribute('data_y', y)
 }
 
 

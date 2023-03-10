@@ -5,4 +5,8 @@
   transform: translate(50px, 75px);
   border: solid 5px rgb(248, 240, 221);
   background-color: rgb(248, 240, 221);
+}
+
+.interactableItem {
+  transform: translate(250px, 0);
 }/*# sourceMappingURL=BuilderCanvas.module.css.map */
