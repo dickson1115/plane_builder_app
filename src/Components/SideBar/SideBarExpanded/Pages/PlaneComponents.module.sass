@@ -22,8 +22,12 @@
 // .svgButton svg
 //     height: 65px
 
+.container.active
+    display: block
+
 .container
     margin: 10px
+    display: none
 
 .container path, ellipse
     stroke: $textColor
@@ -52,4 +56,7 @@
     color: $textColorHover
 
 .btn:focus
+    background-color: $secondary
+
+.btn.active
     background-color: $secondary
