@@ -13,7 +13,7 @@ import "./App.css";
 import AuthContext from "./AuthContext/AuthContext";
 import Login from "./Components/Login/Login";
 function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("");
 
   // Function for importing all Images
   function importAll(r) {
@@ -31,11 +31,11 @@ function App() {
         <NavBar currentPage={currentPage} />
         <Login/>
         <Routes>
-          <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/Tutorial" element={<Tutorial />} />
-          <Route exact path="/Builder" element={<Builder />} />
-          <Route exact path="/Explore" element={<Explore />} />
-          <Route exact path="/About" element={<About />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Tutorial" element={<Tutorial />} />
+          <Route path="/Builder" element={<Builder />} />
+          <Route path="/Explore" element={<Explore />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </BrowserRouter>
       {/* <SideBar /> */}

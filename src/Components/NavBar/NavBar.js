@@ -25,7 +25,7 @@ const NavBar = ({ currentPage }) => {
                             navBarItems.map((item, index) => {
                                 return (
                                     <li key={index} className="nav-item">
-                                        <NavLink className="nav-link" to={"plane_builder_app/" + item}>
+                                        <NavLink className="nav-link" to={"/" + item}>
                                             {item}
                                         </NavLink>
                                     </li>
