@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Builder from "./Components/Builder/Builder";
@@ -27,17 +27,20 @@ function App() {
     <AuthContext.Provider value={{
       images: images
     }}>
-      <BrowserRouter>
+      {/* Note: Git page doesn't support brower history, so the repository name on the url will be missing while using the browerRouter*/}
+      {/* <BrowserRouter> */}
+      <HashRouter>
         <NavBar currentPage={currentPage} />
-        <Login/>
+        <Login />
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Tutorial" element={<Tutorial />} />
           <Route path="/Builder" element={<Builder />} />
           <Route path="/Explore" element={<Explore />} />
           <Route path="/About" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
+      {/* </BrowserRouter> */}
       {/* <SideBar /> */}
       {/* <SvgButton>
         <path clipRule="evenodd" fillRule="evenodd"

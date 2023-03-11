@@ -1,3 +1,7 @@
+:export {
+  sideBarWidth: 250px;
+}
+
 .interactableItem {
   position: absolute;
   border: solid 3px rgba(0, 0, 0, 0);
@@ -6,6 +10,7 @@
   margin: 0px;
   height: 100px;
   width: 100px;
+  touch-action: none;
 }
 
 .interactableItem:hover {

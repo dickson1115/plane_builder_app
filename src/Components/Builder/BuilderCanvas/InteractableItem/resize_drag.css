@@ -1,4 +1,4 @@
-.resize_drag {
+/* .resize_drag {
   width: 200px;
   height: 200px;
   border-radius: 8px;
@@ -7,10 +7,10 @@
   font-size: 20px;
   font-family: sans-serif;
   position: absolute;
-  touch-action: none;
+  touch-action: none; */
 
   /* This makes things *much* easier */
-  box-sizing: border-box;
+  /* box-sizing: border-box;
 }
 
 .resize_drag:focus{
@@ -28,4 +28,4 @@
   width: 1000px;
   height: 1000px;
   border: 2px solid red;
-}
+} */
