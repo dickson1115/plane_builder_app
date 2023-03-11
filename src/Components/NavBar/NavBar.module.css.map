@@ -1,1 +1,1 @@
-{"version":3,"sources":["NavBar.module.sass","../Variables/globalVariables.sass","NavBar.module.css"],"names":[],"mappings":"AACA;EACI,oCCFM;EDGN,wBCES;ACFb;;AFEA;EACI,sBCHQ;ACIZ","file":"NavBar.module.css"}
+{"version":3,"sources":["../Variables/globalVariables.sass","NavBar.module.css","NavBar.module.sass"],"names":[],"mappings":"AA6BA;EACI,mBAAA;AC5BJ;;ACDA;EACI,oCFFM;EEGN,wBFES;ACEb;;ACFA;EACI,sBFHQ;EEIR,WAAA;ADKJ;;ACHA;EACI,oCAAA;ADMJ","file":"NavBar.module.css"}

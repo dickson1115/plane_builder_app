@@ -43,7 +43,7 @@ const NavBar = ({ currentPage }) => {
                             </ul>
                         </li> */}
                     </ul>
-                    <button type="button" className={"btn " + styles.btn} data-bs-toggle="modal" data-bs-target="#login">
+                    <button type="button" className={"btn p-0 " + styles.btn} data-bs-toggle="modal" data-bs-target="#login">
                         Login/Sign up
                     </button>
                     {/* <ul className="navbar-nav">

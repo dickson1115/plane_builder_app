@@ -18,14 +18,12 @@ function SideBar(props) {
 
   return (
     <div className={styles.wrapper}>
-      <SideBarExpanded active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="1" onClick={props.onClick} />
+      <SideBarExpanded header = "Components" active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
+        <PlaneComponents key="1" onClick={props.onClick} handleChangeView={props.handleChangeView} view={props.view} />
       </SideBarExpanded>
-      <SideBarExpanded active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="2" />
+      <SideBarExpanded header = "Data" active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
       </SideBarExpanded>
       <SideBarExpanded active={expandedSiderBar === "3" ? true : false} onClick={handleCollapseSideBar}>
-        <PlaneComponents key="3" />
       </SideBarExpanded>
       <SideBarCollapsed active={true}>
         <SvgButton button_index="1" className="svgButton" active={expandedSiderBar === "1" ? true : false} onClick={handleExpandSideBar}>

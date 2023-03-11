@@ -8,7 +8,6 @@ function InteractableItem(props) {
         className: child.className + ' resize_drag ' + styles.interactableItem + " " + props.className,
         data_x: props.data_x,
         data_y: props.data_y,
-        test: "t"
         
       })
     })

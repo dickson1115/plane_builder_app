@@ -8,8 +8,8 @@ function SideBarExpanded(props) {
       <div className="container">
         <div className={styles.headerBar + " row mb-3"}>
           <div className="col p-0 " />
-          <div className={"col p-0 " + styles.sideBarExpandedHeader}>
-            <h4>Components</h4>
+          <div className={" d-flex justify-content-center col p-0 " + styles.sideBarExpandedHeader}>
+            <h4>{props.header}</h4>
           </div>
           <div className="col d-flex justify-content-end p-0">
             <div>

@@ -1,0 +1,1 @@
+// predeploy and deploy scripts are added for git page (see: https://blog.logrocket.com/deploying-react-apps-github-pages/)
