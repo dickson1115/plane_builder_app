@@ -12,6 +12,7 @@ import "./Fonts/BebasNeueRegular.ttf";
 import "./App.css";
 import AuthContext from "./AuthContext/AuthContext";
 import Login from "./Components/Login/Login";
+import "../src/style.scss"
 function App() {
   const [currentPage, setCurrentPage] = useState("");
 

@@ -10,12 +10,12 @@ const NavBar = ({ currentPage }) => {
     return (
 
         //style={{backgroundColor: "#89939E"}} *for custom navbar colors
-        <nav className={"navbar fixed-top navbar-expand-lg " + styles.navBar}>
+        <nav className={"navbar fixed-top navbar-expand-sm " + styles.navBar}>
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">
+                <NavLink className="navbar-brand" to={"/Home"}>
                     <img src={images["logo.svg"]} width="50" height="50" alt="Logo" />
                     Plane Builder
-                </a>
+                </NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
