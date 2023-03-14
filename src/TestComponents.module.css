@@ -1,0 +1,16 @@
+.view {
+  width: 3000px;
+  height: 1000px;
+  background-color: red;
+}
+
+.easel {
+  transform: translate(250px, -250px);
+  width: 2500px;
+  height: 1500px;
+}
+
+.canvas {
+  width: 500px;
+  height: 300px;
+}/*# sourceMappingURL=TestComponents.module.css.map */

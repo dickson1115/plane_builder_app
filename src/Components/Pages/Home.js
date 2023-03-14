@@ -4,8 +4,6 @@ const Home = () => {
     
 return (
       <>
-        <h1 style={{color:"green"}}> 
-            Welcome to GeeksForGeeks</h1>
       </>
   )
 };

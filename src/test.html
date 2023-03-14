@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html>
-
+<link rel="stylesheet" href="./test.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
 <head>
   <title>Facebook Login JavaScript Example</title>
   <meta charset="UTF-8">
 </head>
 
-<body>
-  <div id="outer">
-    <div id="chart-div">
-      <svg id="chart" viewBox="0 0 300 150">
-        <circle stroke="gold" fill="none" cx="100" cy="75" stroke-width="40" stroke-dasharray="124.85"
-          stroke-dashoffset="20" r="20" />
-      </svg>
-    </div>
-    <div id="legend-div">
-      <svg id="legend" viewBox="0 0 300 150">
-        <rect fill="skyBlue" x="200" y="100" width="80" height="30" />
-      </svg>
-    </div>
-  </div>
+<a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <a class="navbar-brand" href="#">Navbar</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
 
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav ml-auto">
+     <li class="nav-item active">
+       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#">Link</a>
+     </li>
+     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Dropdown
+       </a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="#">Action</a>
+         <a class="dropdown-item" href="#">Another action</a>
+         <div class="dropdown-divider"></div>
+         <a class="dropdown-item" href="#">Something else here</a>
+       </div>
+     </li>
+   </ul>
+ </div>
+</nav>
 
-  <svg id="new" viewBox="0 0 300 150" width="500">
-    <use xlink:href="#chart" />
-    <use xlink:href="#legend" />
-  </svg>
-</body>
-
+<h3 class="text-center my-5">If you are viewing in big window Please switch it to mobile screen or reduct the width to see the toggled navbar</h3>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"/>
 </html>

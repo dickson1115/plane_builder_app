@@ -4,6 +4,7 @@ import SideBarExpanded from "./SideBarExpanded/SideBarExpanded";
 import SideBarCollapsed from "./SidBarCollapsed/SideBarCollapsed";
 import PlaneComponents from "./SideBarExpanded/Pages/PlaneComponents";
 import SvgButton from '../SvgButton/SvgButton';
+import Button from 'react-bootstrap/Button';
 function SideBar(props) {
   const sideBarItems = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
   const [expandedSiderBar, setExpandedSiderBar] = useState("");
@@ -17,11 +18,11 @@ function SideBar(props) {
   }
 
   return (
-    <div className={styles.wrapper}>
-      <SideBarExpanded header = "Components" active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
+    <div className={"wrapper " + styles.wrapper}>
+      <SideBarExpanded header="Components" active={expandedSiderBar === "1" ? true : false} onClick={handleCollapseSideBar}>
         <PlaneComponents key="1" onClick={props.onClick} handleChangeView={props.handleChangeView} view={props.view} />
       </SideBarExpanded>
-      <SideBarExpanded header = "Data" active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
+      <SideBarExpanded header="Data" active={expandedSiderBar === "2" ? true : false} onClick={handleCollapseSideBar}>
       </SideBarExpanded>
       <SideBarExpanded active={expandedSiderBar === "3" ? true : false} onClick={handleCollapseSideBar}>
       </SideBarExpanded>

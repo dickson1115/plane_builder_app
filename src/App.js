@@ -5,14 +5,17 @@ import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Builder from "./Components/Builder/Builder";
 import Explore from "./Components/Pages/Explore";
-import NavBar from "./Components/NavBar/NavBar";
+import Navbar from "./Components/Navbar/Navbar";
 import Tutorial from "./Components/Pages/Tutorial";
 import BasicExample from "./BasicExample";
 import "./Fonts/BebasNeueRegular.ttf";
 import "./App.css";
 import AuthContext from "./AuthContext/AuthContext";
-import Login from "./Components/Login/Login";
-import "../src/style.scss"
+import TestComponent from "./TestComponent";
+import DragComponent from "./DragComponent";
+import ViewBoard from "./Components/Builder/ViewBoard"
+import './style.css'
+import BuilderCanvas from "./Components/Builder/BuilderCanvas/BuilderCanvas";
 function App() {
   const [currentPage, setCurrentPage] = useState("");
 
@@ -28,17 +31,20 @@ function App() {
     <AuthContext.Provider value={{
       images: images
     }}>
+      {/* <DragComponent /> */}
+      {/* <BuilderCanvas/> */}
+      {/* <ViewBoard/> */}
       {/* Note: Git page doesn't support brower history, so the repository name on the url will be missing while using the browerRouter*/}
       {/* <BrowserRouter> */}
+      {/* <TestComponent/> */}
       <HashRouter>
-        <NavBar currentPage={currentPage} />
-        <Login />
+        <Navbar currentPage={currentPage} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Tutorial" element={<Tutorial />} />
-          <Route path="/Builder" element={<Builder />} />
-          <Route path="/Explore" element={<Explore />} />
-          <Route path="/About" element={<About />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Tutorial" element={<Tutorial />} />
+          <Route exact path="/Builder" element={<Builder />} />
+          <Route exact path="/Explore" element={<Explore />} />
+          <Route exact path="/About" element={<About />} />
         </Routes>
       </HashRouter>
       {/* </BrowserRouter> */}

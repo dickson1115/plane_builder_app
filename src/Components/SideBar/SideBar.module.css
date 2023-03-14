@@ -1,6 +1,5 @@
 .wrapper {
-  display: flex;
-  height: 100vh;
-  position: fixed;
-  top: 75px;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }/*# sourceMappingURL=SideBar.module.css.map */

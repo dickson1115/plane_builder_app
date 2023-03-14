@@ -1,3 +1,7 @@
+:export {
+  sideBarWidth: 230px;
+}
+
 #sideBarExpanded {
   min-width: 200px;
   max-width: 200px;
@@ -5,13 +9,13 @@
   transition: all 0.3s;
   font-family: "BNRegular";
   color: rgb(79, 77, 72);
-  margin-left: -250px;
-  position: fixed;
-  height: 100vh;
+  margin-left: -230px;
+  position: absolute;
+  height: 100%;
 }
 
 #sideBarExpanded.active {
-  margin-left: 50px;
+  margin-left: 30px;
   transition: all 0.3s;
 }
 

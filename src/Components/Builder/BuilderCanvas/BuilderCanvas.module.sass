@@ -1,12 +1,40 @@
-@import '../../Variables/globalVariables.sass' 
-
-.builderCanvas
+@import '../../../style.sass'
+.view
   position: relative
-  height: $canvasHeight 
+  display: flex
+  justify-content: center
+  align-items: center
+  // overflow: hidden
+  height: 80vh
+  width: 80vw
+  background-color: grey
+
+  // top:0px
+  // left:$sideBarCollapsedWidth
+  // height: 70vh
+  // width: 70vw
+.easal
+  // transform: translate($sideBarCollapsedWidth, $navBarHeight)
+  // border: solid 5px red
+  // background-color: $canvasColor
+  // position: absolute
+  // border: solid 5px red
+  // // background-color: grey
+  // position: relative
+  // display: flex
+  // justify-content: center
+  // align-items: center
+
+.canvas
+  height: $canvasHeight
   width: $canvasWidth
-  transform: translate($sideBarCollapsedWidth, $navBarHeight)
-  border: solid 5px $canvasColor
   background-color: $canvasColor
+  overflow-clip-margin: content-box
+  overflow: clip
 
 .interactableItem
   transform: translate(calc($sideBarCollapsedWidth + $sideBarExpandedWidth), 0)
+
+.component
+  width: "fit-content"
+  height: "fit-content"

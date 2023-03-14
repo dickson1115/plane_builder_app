@@ -1,22 +1,24 @@
 import React from "react";
 import styles from "./SideBarCollapsed.module.css";
-
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Container from "react-bootstrap/Container";
 // This is a component for the siderbar when it is collapsed. This sidebar will be a collumn of svg buttons
 // It's child components are intented to be SvgButton component for proper css styling (see SvgButton.js)
 // Use this component by wrapping a list of SvgButton components with a className of svgButton (see Sidebar for implementating example)
 function SideBarCollapsed(props) {
   return (
     <nav id={styles.sidebarCollapsed} className={props.active ? styles.active : ""}>
-      <div className="row row-cols-1 m-0">
+      <Container>
         {React.Children.map(props.children, (child) => {
           if (child.props.className !== "svgButton") return;
           const active = (child.props.active === true) ? styles.active : "";
-          return React.cloneElement(child, {
+          return <Row className={styles.row}>{React.cloneElement(child, {
             // className: `${child.props.className + " " + active + " " + styles.svgButton}`,
-            className: child.props.className + " " + active + " " + styles.svgButton,
-          });
+            className: child.props.className + " " + active + " p-0 mb-2 " + styles.svgButton,
+          })}</Row>
         })}
-      </div>
+      </Container>
     </nav>
   );
 }

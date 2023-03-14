@@ -1,16 +1,49 @@
-@import ../Variables/globalVariables
-@import ../../style.scss
-.navBar
-    background-color: $primary
+@import ../../style.sass
+
+.navBar, .login_modal
+    // background-color: $primary
     font-family: $fontFamily
-    width: 100vw
+    // width: 100% !important
+    // // height: 100% !important
+    z-index: 3
+    display: flex
+    justify-content: start !important
 
-.btn
-    color:  rgba(0,0,0,0.55) !important
-    border: 0px !important
+.modalMediaAnchor
+    background-color: rgba(0,0,0,0)
+    color: $primary
+// .login_modal
+//     font-family: $fontFamily
+    // display: flex
+    // justify-content: center !important
+    // display: flex
+    // justify-content: center !important
+.loginButton
+    color: $navbar-disabled-color !important
 
-.btn:hover
-    color: $textColor !important
+.loginButton:hover
+    color: $navbar-hover-color !important
 
-.btn:active
-    color: rgba(0,0,0,0.3) !important
+.loginButton:active
+    color: $navbar-active-color !important
+// .form
+    // display: flex
+    // justify-content: center !important
+// .btn
+//     color:  rgba(0,0,0,0.55) !important
+//     border: 0px !important
+
+// .btn:hover
+//     color: $textColor !important
+
+// .btn:active
+//     color: rgba(0,0,0,0.3) !important
+
+.close_navbar_toggler
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 2
+    // cursor: pointer

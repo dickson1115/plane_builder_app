@@ -1,5 +1,5 @@
 const svgElements = {
-    engine_front: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+    engine_front: <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 240 240">
         <ellipse id="shape0" transform="translate(20, 20)" rx="90" ry="90" cx="100" cy="101" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" />
         <ellipse id="shape1" transform="translate(45, 47)" rx="70" ry="70" cx="75" cy="73" strokeWidth="7.2" strokeLinecap="square" strokeLinejoin="bevel" fill="none" />
     </svg>,
@@ -20,11 +20,11 @@ const svgElements = {
         <path id="shape6" transform="translate(10.4399996533942, 61.5599979562212)" fill="none" strokeWidth="6" strokeLinecap="square" strokeLinejoin="bevel" d="M17.28 0C15.36 0 21.48 0.36 35.64 1.08C28.68 11.16 22.44 33.36 16.92 67.68L0 66.96C0 61.28 5.76 38.96 17.28 0Z" />
         <path id="shape7" transform="translate(190.799993665481, 60.4799979920769)" fill="none" strokeWidth="6" strokeLinecap="square" strokeLinejoin="bevel" d="M34.2 70.2C33 39.24 27.6 15.84 18 0L0 0C9.36 19.44 15.72 42.6 19.08 69.48Z" />
     </svg>,
-    wing_front: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 30">
+    wing_front: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 30" height_multiplier="2" width_multiplier="2">
         <defs />
         <path id="shape0" transform="translate(10, 6)" fill="none" strokeWidth="2" strokeLinecap="square" strokeLinejoin="bevel" d="M110.171 18.5119L10.157 0.491468L0 0.163823L8.51877 0.163823L110.171 8.84642L204.942 0.163823L215.263 0L205.433 0.491468Z" />
     </svg>,
-    strut: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 240">
+    strut: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 240" height_multiplier="2" width_multiplier="2">
         <defs />
         <path id="shape0" transform="translate(15, 20.9252669039146)" fill="none" strokeWidth="9.6" strokeLinecap="square" strokeLinejoin="miter" strokeMiterlimit="2" d="M0 0L0 198.149" />
     </svg>

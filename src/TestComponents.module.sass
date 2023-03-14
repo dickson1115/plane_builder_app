@@ -1,0 +1,23 @@
+$canvasWidth: 500px
+$canvasHeight: 300px
+$easelWidth: calc($canvasWidth * 5)
+$easelHeight: calc($canvasHeight * 5)
+$viewWidth: 3000px
+$viewHeight: 1000px
+$viewOffsetHeight: calc($viewHeight / 2 - $easelHeight / 2)
+$viewOffsetWidth: calc($viewWidth / 2 - $easelWidth / 2)
+
+.view
+    width: $viewWidth
+    height: $viewHeight
+    background-color: red
+
+.easel
+    transform: translate($viewOffsetWidth,$viewOffsetHeight)
+    width: $easelWidth
+    height: $easelHeight
+
+.canvas
+    width: $canvasWidth
+    height: $canvasHeight
+

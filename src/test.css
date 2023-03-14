@@ -1,0 +1,22 @@
+body{
+    min-height:100vh;
+    background:#fff;
+    position:relative;
+  }
+  .navbar{
+  /*   z-index should be above .close-navbar-toggler */
+    z-index:2;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  }
+  .close-navbar-toggler{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:1;
+    cursor:pointer;
+  }
+  .close-navbar-toggler.collapsed{
+    z-index:-1;
+  }
