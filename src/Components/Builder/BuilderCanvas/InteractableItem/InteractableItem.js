@@ -18,6 +18,8 @@ function InteractableItem(props) {
         // height: "20%",
         onMouseDownCapture: props.onMouseDownCapture,
         onMouseUpCapture: props.onMouseUpCapture,
+        onTouchStart: props.onMouseDownCapture,
+        onTouchEnd: props.onMouseUpCapture,
       })
     })
   )
