@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/plane_builder_app/static/css/main.c04f138b.css",
-    "main.js": "/plane_builder_app/static/js/main.d6d9fc33.js",
+    "main.js": "/plane_builder_app/static/js/main.400cdfe7.js",
     "static/js/787.008123a3.chunk.js": "/plane_builder_app/static/js/787.008123a3.chunk.js",
     "static/media/medium-image.jpg": "/plane_builder_app/static/media/medium-image.12ec4e94c5709cb3cf38.jpg",
     "static/media/BebasNeueRegular.ttf": "/plane_builder_app/static/media/BebasNeueRegular.9aa03f9d52866893add5.ttf",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/plane_builder_app/static/media/logo.1b14e53b7c5d9e786b0d.svg",
     "index.html": "/plane_builder_app/index.html",
     "main.c04f138b.css.map": "/plane_builder_app/static/css/main.c04f138b.css.map",
-    "main.d6d9fc33.js.map": "/plane_builder_app/static/js/main.d6d9fc33.js.map",
+    "main.400cdfe7.js.map": "/plane_builder_app/static/js/main.400cdfe7.js.map",
     "787.008123a3.chunk.js.map": "/plane_builder_app/static/js/787.008123a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c04f138b.css",
-    "static/js/main.d6d9fc33.js"
+    "static/js/main.400cdfe7.js"
   ]
 }
