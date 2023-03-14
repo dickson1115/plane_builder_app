@@ -87,8 +87,8 @@ function ViewBoard(props) {
             ref={(el) => setContainer(el)
             }>
             {imageScale > 0 && (<TransformWrapper
-
-                initialScale={imageScale}
+                //Note: 0.9 mutiplier is add due to some unknow sizing error. The height of the canvas overflow the view a little bit during initial render
+                initialScale={imageScale*0.9}
                 minScale={imageScale / 2}
                 maxScale={imageScale * zoomFactor}
                 centerOnInit

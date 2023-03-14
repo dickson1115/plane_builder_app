@@ -33,7 +33,7 @@ const Builder = () => {
     // setInteractableItems([...interactableItems,svgElement]);
   }
   return (
-    <div className="builderPage" style={{ position: "absolute", width: "2500px", height: "3500px" }}>
+    <div className="builderPage" style={{ position: "absolute" }}>
       {/* <div className="viewWindow" style={{ position: "absolute", width: "80vw", height: "80vh", backgroundColor: "rgba(0,0,0,0.3)"}}> */}
       <ViewBoard>
         <BuilderCanvas className="front_canvas" interactableItems={interactableItems.front_canvas} />
