@@ -10818,4 +10818,16 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.btn-custom {
+  color: rgb(79, 77, 72);
+}
+
+.btn-custom:hover {
+  color: rgb(32, 31, 29);
+  background: rgb(255, 248, 233);
+}
+
+.btn-custom * {
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */

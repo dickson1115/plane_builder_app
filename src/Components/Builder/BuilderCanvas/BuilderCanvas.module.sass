@@ -1,4 +1,4 @@
-@import '../../../style.sass'
+@import '../../../styleVariables.sass'
 .view
   position: relative
   display: flex
@@ -8,6 +8,9 @@
   height: 80vh
   width: 80vw
   background-color: grey
+
+// .view:focus
+//   background-color: red
 
   // top:0px
   // left:$sideBarCollapsedWidth
@@ -26,14 +29,14 @@
   // align-items: center
 
 .canvas
-  height: $canvasHeight
-  width: $canvasWidth
+  // height: $canvasHeight
+  // width: $canvasWidth
   background-color: $canvasColor
   overflow-clip-margin: content-box
   overflow: clip
 
-.interactableItem
-  transform: translate(calc($sideBarCollapsedWidth + $sideBarExpandedWidth), 0)
+// .interactableItem
+//   transform: translate(calc($sideBarCollapsedWidth + $sideBarExpandedWidth), 0)
 
 .component
   width: "fit-content"

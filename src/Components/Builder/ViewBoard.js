@@ -13,17 +13,17 @@ function ViewBoard(props) {
     const [containerHeight, setContainerHeight] = useState(0);
 
     const [imageNaturalWidth, setImageNaturalWidth] = useState(1980);
-    const [imageNaturalHeight, setImageNaturalHeight] = useState(1000);
+    const [imageNaturalHeight, setImageNaturalHeight] = useState(1080);
 
-    const [disableCanvasDrag, setDisableCanvasDrag] = useState(false);
-    const handleDisableCanvasDrag = () => {
-        console.log("disable")
-        return setDisableCanvasDrag(true)
-    }
-    const handleEnableCanvasDrag = () => {
-        console.log("enable")
-        setDisableCanvasDrag(false)
-    }
+    // const [disableCanvasDrag, setDisableCanvasDrag] = useState(false);
+    // const handleDisableCanvasDrag = () => {
+    //     console.log("disable")
+    //     return setDisableCanvasDrag(true)
+    // }
+    // const handleEnableCanvasDrag = () => {
+    //     console.log("enable")
+    //     setDisableCanvasDrag(false)
+    // }
 
     const imageScale = useMemo(() => {
         if (
@@ -81,9 +81,10 @@ function ViewBoard(props) {
 
         <div className={styles.view} 
             // style={{
-            //     width: "80vw",
-            //     height: "80vh",
+            //    border: "solid 1px red"
             // }}
+            
+            // tabIndex={0}
             ref={(el) => setContainer(el)
             }>
             {imageScale > 0 && (<TransformWrapper
@@ -92,14 +93,16 @@ function ViewBoard(props) {
                 minScale={imageScale / 2}
                 maxScale={imageScale * zoomFactor}
                 centerOnInit
-                disabled={disableCanvasDrag}
+                disabled={props.disableCanvasDrag}
             >
 
                 <TransformComponent
                     key={`${containerWidth}x${containerHeight}`}
+                    // tabIndex={0}
                     wrapperStyle={{
                         width: "100%",
                         height: "100%",
+                        // border: "solid 1px red"
                     }}
                 >
                     {/* <img src={src} /> */}
@@ -107,8 +110,8 @@ function ViewBoard(props) {
                     {
                         React.Children.map(props.children, (child) => {
                             return React.cloneElement(child, {
-                                onMouseDownCapture: handleDisableCanvasDrag,
-                                onMouseUpCapture: handleEnableCanvasDrag,
+                                // onMouseDownCapture: handleDisableCanvasDrag,
+                                // onMouseUpCapture: handleEnableCanvasDrag,
                             })
                         })
                     }

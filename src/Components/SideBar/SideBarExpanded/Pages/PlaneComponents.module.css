@@ -1,7 +1,3 @@
-:export {
-  sideBarWidth: 230px;
-}
-
 .svgButton:active {
   border-color: rgb(79, 77, 72);
 }
@@ -12,12 +8,26 @@
 }
 
 .svgButton {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   border: solid 3px rgba(0, 0, 0, 0);
-  height: 115;
   background: rgb(251, 240, 217);
+}
+
+.btn:active {
+  background-color: rgb(255, 230, 186) !important;
+  outline-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btnGroup {
+  background-color: rgb(255, 248, 233) !important;
+}
+
+.btn.active {
+  background-color: rgb(251, 240, 217) !important;
 }
 
 .container.active {

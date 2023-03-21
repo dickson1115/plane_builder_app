@@ -46,13 +46,13 @@ interact('.resize_drag')
       })
     ],
 
-    inertia: true
+    inertia: false
   })
 
 interact('.resize_drag')
   .draggable({
     // enable inertial throwing
-    inertia: true,
+    inertia: false,
     // keep the element within the area of it's parent
     modifiers: [
       interact.modifiers.restrictRect({
@@ -107,7 +107,7 @@ function getScale(event) {
   scaleStart = scaleStart + transformString.substring(scaleStart).indexOf("(")
   var scaleEnd = transformString.substring(scaleStart).indexOf(")")
   var scale = transformString.substring(scaleStart + 1, scaleStart + scaleEnd)
-  return scale
+  return scale ? scale : 1
 }
 
 

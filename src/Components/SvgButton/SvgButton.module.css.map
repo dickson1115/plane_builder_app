@@ -1,1 +1,1 @@
-{"version":3,"sources":["../Variables/globalVariables.sass","SvgButton.module.css","SvgButton.module.sass"],"names":[],"mappings":"AA6BA;EACI,mBAAA;AC5BJ;;ACAI;EACI,sBAAA;EACA,oBAAA;ADGR;;ACFA;EACI,YAAA;ADKJ","file":"SvgButton.module.css"}
+{"version":3,"sources":["SvgButton.module.sass","SvgButton.module.css"],"names":[],"mappings":"AACA;EACQ,aAAA;ACAR","file":"SvgButton.module.css"}

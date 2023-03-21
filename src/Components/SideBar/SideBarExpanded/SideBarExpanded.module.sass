@@ -1,7 +1,7 @@
-@import '../../Variables/globalVariables.sass'
+@import '../../../styleVariables.sass'
 $paddingTop: 15px
 
-#sideBarExpanded
+.sideBarExpanded
     min-width: $sideBarExpandedWidth
     max-width: $sideBarExpandedWidth
     background: $secondary
@@ -12,7 +12,7 @@ $paddingTop: 15px
     position: absolute
     height: 100%
 
-#sideBarExpanded.active
+.sideBarExpanded.active
     margin-left: $sideBarCollapsedWidth
     transition: all 0.3s 
 
@@ -33,28 +33,28 @@ $paddingTop: 15px
 
 
 .svgButton
-    width: 25px
-    height: 25px
-    display: flex
-    justify-content: center
-    padding: 0px
-    align-items: center
-    border-radius: 50%
-    border-width: 2px
-    border-color: $headerColor
-    background-color: $headerColor
-    border-style: solid
+    width: 1.5rem !important
+    height: 1.5rem !important
+    // display: flex
+    // justify-content: center
+    // padding: 0px
+    // align-items: center
+    border-radius: 50% !important
+    // border-width: 2px
+    // border-color: $headerColor
+    // background-color: $headerColor
+    // border-style: solid
     
-.svgButton:hover
-    background-color: $primary
-    transition: all 0.3s
+// .svgButton:hover
+//     background-color: $primary
+//     transition: all 0.3s
 
-.svgButton:hover
-    svg
-        color: $textColorHover
+// .svgButton:hover
+//     svg
+//         color: $textColorHover
 
-.svgButton:active
-    color: $textColor
-    background-color: $secondary
-    border-color: $textColor
-    transition: all 0.3s
+// .svgButton:active
+//     color: $textColor
+//     background-color: $secondary
+//     border-color: $textColor
+//     transition: all 0.3s

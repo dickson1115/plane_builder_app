@@ -1,25 +1,60 @@
 import React, { useState } from 'react'
 import styles from './BuilderCanvas.module.css'
 import InteractableItem from './InteractableItem/InteractableItem'
-import variables from '../../Variables/globalVariables.sass'
+import styleVariables from '../../../style.sass'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 // import svgElements from '../../Variables/svgElements'
 
-function BuilderCanvas(props) {
+const BuilderCanvas = React.forwardRef(function BuilderCanvas(props, ref) {
 
-
+  const handleClickCanvas = () => {
+    console.log("clicked canvas")
+    document.activeElement.blur()
+    console.log(document.activeElement)
+  }
   // function handleMouseMove(event) {
   //   console.log("X: " + event.clientX + "Y: " + event.clientY)
   // }
-
+  const InteractableItemMemo = React.memo(InteractableItem)
   return (
-    <div className={styles.canvas} >
+    <div
+      ref={ref}
+      className={styles.canvas}
+      id={props.id}
+      onMouseMove={props.handleMouseMove}
+      style={{ height: props.canvasHeight, width: props.canvasWidth }}
+      tabIndex={0}
+      onClick={handleClickCanvas}
+    >
       {
         props.interactableItems.map((item, index) => {
-          const viewBox = item.props.viewBox.split(" ")
-          const width = viewBox[2]
-          const height = viewBox[3]
-          return <InteractableItem onMouseUpCapture={props.onMouseUpCapture} onMouseDownCapture={props.onMouseDownCapture} className={styles.interactableItem} width={width} height={height} key={index} data_x={variables.sideBarWidth} data_y={0}>{item}</InteractableItem>
+          return (
+            <InteractableItem
+              // handleItemOnMove={props.handleItemOnMove}
+              onMouseUpCapture={() => { props.handleEnableCanvasDrag(); props.handleSave() }}
+              onMouseDownCapture={() => { props.handleMouseDownPosition(); props.handleDisableCanvasDrag() }}
+              onTouchStart={props.handleDisableCanvasDrag}
+              onTouchEnd={() => { props.handleEnableCanvasDrag(); props.handleSave() }}
+              // handleEnableCanvasDrag={props.handleEnableCanvasDrag}
+              // handleDisableCanvasDrag={props.handleDisableCanvasDrag}
+              className={styles.interactableItem}
+              plane_component_name={item.plane_component_name}
+              width={item.width}
+              height={item.height}
+              data_x={item.data_x}
+              data_y={item.data_y}
+              style={item.style}
+              key={index}
+              index={item.index}
+              // onClick={(event) => { event.stopPropagation(); props.handleSelectItem() }}
+              onClick={(event) => { event.stopPropagation(); props.handleSelectItem(event) }}
+            >
+              {item.svg}
+            </InteractableItem>
+          )
+
+
+          // return <InteractableItem key={index}>{item}</InteractableItem>
         })
       }
     </div>
@@ -69,4 +104,5 @@ function BuilderCanvas(props) {
   )
 
 }
+)
 export default BuilderCanvas

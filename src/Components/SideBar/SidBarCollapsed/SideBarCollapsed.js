@@ -11,11 +11,11 @@ function SideBarCollapsed(props) {
     <nav id={styles.sidebarCollapsed} className={props.active ? styles.active : ""}>
       <Container>
         {React.Children.map(props.children, (child) => {
-          if (child.props.className !== "svgButton") return;
+          // if (child.props.className !== "svgButton") return;
           const active = (child.props.active === true) ? styles.active : "";
-          return <Row className={styles.row}>{React.cloneElement(child, {
+          return <Row className={styles.row + " mb-3"}>{React.cloneElement(child, {
             // className: `${child.props.className + " " + active + " " + styles.svgButton}`,
-            className: child.props.className + " " + active + " p-0 mb-2 " + styles.svgButton,
+            className: child.props.className + " " + active + " " + styles.svgButton,
           })}</Row>
         })}
       </Container>

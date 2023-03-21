@@ -1,4 +1,4 @@
-@import '../../../../style.sass'
+@import '../../../../styleVariables.sass'
 .interactableItem
     position: absolute
     border:  solid 3px rgba(0, 0, 0, 0)
@@ -11,10 +11,22 @@
 // .interactableItem:hover
 //     color: $textColor
 
-.interactableItem:hover
+.interactableItem *
+    pointer-events: none
+
+.interactableItem.selected
     border-color: $textColor
     // transition: all .3s
     background-color: rgb(241, 232, 211, 0.5)
+
+.interactableItem:hover
+    border-color: $textColor
+    // transition: all .3s
+    background-color: rgb(241, 232, 211, 0.9)
+
+// .interactableItem:focus
+//     border-color: $textColor
+//     background-color: rgb(241, 232, 211, 0.5)
 
 .interactableItem path,ellipse
     fill: $primary

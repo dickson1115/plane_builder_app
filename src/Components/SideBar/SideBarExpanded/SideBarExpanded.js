@@ -4,7 +4,7 @@ import SvgButton from '../../SvgButton/SvgButton'
 
 function SideBarExpanded(props) {
   return (
-    <nav id={styles.sideBarExpanded} className={props.active ? styles.active : ""}>
+    <nav className={styles.sideBarExpanded + " " + (props.active ? styles.active : "")}>
       <div className="container">
         <div className={styles.headerBar + " row mb-3"}>
           <div className="col p-0 " />

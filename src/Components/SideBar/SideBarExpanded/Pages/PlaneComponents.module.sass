@@ -1,5 +1,5 @@
 
-@import '../../../Variables/globalVariables'
+@import '../../../../styleVariables.sass'
 .svgButton:active
     border-color: $textColor
 
@@ -8,19 +8,32 @@
     transition: all 0.3s 
 
 .svgButton
-    // display: flex
-    // justify-content: center
-    padding: 10px
+    display: flex
+    justify-content: center
     align-items: center
     border-radius: 10px
     border: solid 3px rgba(0, 0, 0, 0)
-    height: 115
+    // height: 115px
     background: $secondary
+    // padding: 10rem
     // display: flex
     // justify-content: center
 
 // .svgButton svg
 //     height: 65px
+.btn:active
+    background-color: $headerColor !important
+    outline-color: transparent !important
+    border-color: transparent !important
+
+// .btn:hover
+//     background-color: $secondary !important
+
+.btnGroup
+    background-color: $primary !important
+
+.btn.active
+    background-color: $secondary !important
 
 .container.active
     display: block
