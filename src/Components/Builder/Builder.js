@@ -186,8 +186,13 @@ const Builder = () => {
 
   const front_canvas = useRef(null)
   const handleSave = () => {
-    if (mousePosition.current.x === mouseDownPosition.current.x && mousePosition.current.y === mouseDownPosition.current.y) {
+    if (mousePosition.current.x === mouseDownPosition.current.x &&
+      mousePosition.current.y === mouseDownPosition.current.y &&
+      touchEndPosition.current.x === touchStartPosition.current.x &&
+      touchEndPosition.current.y === touchStartPosition.current.y
+    ) {
       console.log("same mouse position")
+      console.log("same touch position")
       return
     }
     handleUpdateUndoStack()
@@ -248,16 +253,37 @@ const Builder = () => {
   }
   const mousePosition = useRef({ x: null, y: null })
   const mouseDownPosition = useRef({ x: null, y: null })
+
+  const touchEndPosition = useRef({ x: null, y: null })
+  const touchStartPosition = useRef({ x: null, y: null })
   const handleMouseDownPosition = () => {
     mouseDownPosition.current.x = mousePosition.current.x
     mouseDownPosition.current.y = mousePosition.current.y
     console.log(mouseDownPosition.current)
   }
 
-  const handleMouseMove = (event) => {
+  const handleTouchStartPosition = (event) => {
+    touchStartPosition.current.x = event.changedTouches[0].clientX
+    touchStartPosition.current.y = event.changedTouches[0].clientY
+    
+    // touchStartPosition.current.x = event.touches[0].clientX
+    // touchStartPosition.current.y = event.touches[0].clientY
+    // console.log(touchStartPosition.current)
+  }
+
+  const handleTouchEndPosition = (event) => {
+    touchEndPosition.current.x = event.changedTouches[0].clientX
+    touchEndPosition.current.y = event.changedTouches[0].clientY
+    // console.log(event.touches[0].clientY)
+    // touchEndPosition.current.x = event.touches[0].clientX
+    // touchEndPosition.current.y = event.touches[0].clientY
+    // console.log(touchEndPosition.current)
+  }
+
+  const handleMousePosition = (event) => {
     mousePosition.current.x = event.clientX
     mousePosition.current.y = event.clientY
-    // console.log(mousePosition.current)
+    // console.log(mouseUpPosition.current)
   }
   useEffect(() => {
     console.log(document.activeElement)
@@ -384,17 +410,17 @@ const Builder = () => {
 
   const copyItem = useRef(null)
   const handleCopy = () => {
-    const canvas_name = selectedItem.current.view+"_canvas"
+    const canvas_name = selectedItem.current.view + "_canvas"
     const index = parseInt(selectedItem.current.index)
     console.log(canvas_name + " " + index)
-    copyItem.current = {...interactableItems[canvas_name][index]}
+    copyItem.current = { ...interactableItems[canvas_name][index] }
   }
   const handlePaste = () => {
     if (view !== selectedItem.current.view) return
     console.log("paste")
     const canvas_name = selectedItem.current.view + "_canvas"
     handleUpdateUndoStack()
-    setInteractableItems({ ...interactableItems, [canvas_name]: [...interactableItems[canvas_name], copyItem.current ] });
+    setInteractableItems({ ...interactableItems, [canvas_name]: [...interactableItems[canvas_name], copyItem.current] });
   }
   return (
     <div className="builderPage" style={{ position: "absolute" }}>
@@ -410,11 +436,12 @@ const Builder = () => {
           handleEnableCanvasDrag={handleEnableCanvasDrag}
           handleSave={handleSave}
           handleMouseDownPosition={handleMouseDownPosition}
-          handleMouseMove={handleMouseMove}
+          handleMousePosition={handleMousePosition}
           canvasHeight={canvasHeight + "px"}
           canvasWidth={canvasWidth + "px"}
           handleSelectItem={handleSelectItem}
-
+          handleTouchStartPosition={handleTouchStartPosition}
+          handleTouchEndPosition={handleTouchEndPosition}
         />
       </ViewBoard>
 

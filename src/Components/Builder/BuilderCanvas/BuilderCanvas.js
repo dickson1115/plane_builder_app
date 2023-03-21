@@ -21,7 +21,7 @@ const BuilderCanvas = React.forwardRef(function BuilderCanvas(props, ref) {
       ref={ref}
       className={styles.canvas}
       id={props.id}
-      onMouseMove={props.handleMouseMove}
+      onMouseMove={props.handleMousePosition}
       style={{ height: props.canvasHeight, width: props.canvasWidth }}
       tabIndex={0}
       onClick={handleClickCanvas}
@@ -31,10 +31,10 @@ const BuilderCanvas = React.forwardRef(function BuilderCanvas(props, ref) {
           return (
             <InteractableItem
               // handleItemOnMove={props.handleItemOnMove}
-              onMouseUpCapture={() => { props.handleEnableCanvasDrag(); props.handleSave() }}
               onMouseDownCapture={() => { props.handleMouseDownPosition(); props.handleDisableCanvasDrag() }}
-              onTouchStart={props.handleDisableCanvasDrag}
-              onTouchEnd={() => { props.handleEnableCanvasDrag(); props.handleSave() }}
+              onMouseUpCapture={() => {  props.handleEnableCanvasDrag(); props.handleSave()}}
+              onTouchStart={(event) => { props.handleTouchStartPosition(event); props.handleDisableCanvasDrag()}}
+              onTouchEnd={(event) => { props.handleTouchEndPosition(event); props.handleEnableCanvasDrag(); props.handleEnableCanvasDrag(); props.handleSave() }}
               // handleEnableCanvasDrag={props.handleEnableCanvasDrag}
               // handleDisableCanvasDrag={props.handleDisableCanvasDrag}
               className={styles.interactableItem}

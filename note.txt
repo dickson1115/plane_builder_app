@@ -1,1 +1,3 @@
 // predeploy and deploy scripts are added for git page (see: https://blog.logrocket.com/deploying-react-apps-github-pages/)
+// use this command to deploy and application --> npm run deploy
+// info about touch event (see: https://stackoverflow.com/questions/7056026/variation-of-e-touches-e-targettouches-and-e-changedtouches)
