@@ -1,8 +1,11 @@
 import React from 'react'
-
+import NavBar from '../Navbar/Navbar';
 function Tutorial() {
   return (
-    <div>Tutorial</div>
+    <div>
+      {/* <NavBar/> */}
+      <div>Tutorial</div>
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
-
+import NavBar from '../Navbar/Navbar';
 function Explore() {
   return (
-    <div>Explore</div>
+    <div>
+      {/* <NavBar /> */}
+      <div>Explore</div>
+    </div>
   )
 }
 

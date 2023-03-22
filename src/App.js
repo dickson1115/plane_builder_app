@@ -18,7 +18,7 @@ import './style.css'
 import BuilderCanvas from "./Components/Builder/BuilderCanvas/BuilderCanvas";
 function App() {
   const [currentPage, setCurrentPage] = useState("");
-
+  console.log(currentPage)
   // Function for importing all Images
   function importAll(r) {
     let images = {};

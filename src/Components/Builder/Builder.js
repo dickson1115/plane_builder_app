@@ -3,6 +3,7 @@ import SideBar from "../SideBar/SideBar";
 import BuilderCanvas from "./BuilderCanvas/BuilderCanvas";
 import svgElements from "../SvgButton/SvgComponenet";
 import ViewBoard from "./ViewBoard";
+import NavBar from "../Navbar/Navbar";
 const Builder = () => {
   const [planeComponents, setPlaneComponents] = useState({
     front: {
@@ -1039,10 +1040,7 @@ const Builder = () => {
         </svg>
       ),
       vertical_stabilizer_side: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 240 182.16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 182.16">
           <defs />
           <path
             id="shape0"
@@ -1069,68 +1067,52 @@ const Builder = () => {
       wing_side: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 240 70.56"
+          viewBox="0 0 240 67.92"
         >
           <defs />
           <path
             id="shape0"
-            transform="translate(123.460847959344, 37.4200920619044)"
+            transform="translate(8.48484812483747, 5.51543303660435)"
             fill="none"
             stroke="#000000"
-            strokeWidth="1.2"
+            strokeWidth="0.96"
             strokeLinecap="square"
             strokeLinejoin="bevel"
-            d="M34.026 3.56382C25.371 6.73166 14.029 6.90136 0 4.07294C15.8958 1.35765 23.8436 0 23.8436 0C30.4056 2.31931 33.7997 3.50725 34.026 3.56382Z"
+            d="M228.212 0C226.006 1.24451 214.904 4.63862 194.907 10.1823C188.374 12.5865 180.468 15.6553 171.191 19.3889C173.001 19.3889 176.226 20.2657 180.864 22.0193C180.864 22.0193 175.716 21.9627 165.421 21.8496C165.421 21.8496 163.031 22.6274 158.251 24.1831C164.049 25.8235 165.308 27.0539 162.027 27.8742C161.914 27.7893 157.586 27.8034 149.044 27.9166C146.046 28.2277 144.363 29.8399 143.996 32.7532C144.561 32.5835 145.537 32.8663 146.923 33.6017C148.79 34.7614 149.067 35.7823 147.755 36.6646C148.595 36.1846 155.675 39.1846 168.995 45.6646C173.155 47.2246 175.655 49.0446 176.495 51.1246C175.935 55.8446 172.095 58.3246 164.975 58.5646L165.995 58.5646C103.075 58.7646 57.1352 58.7646 28.1752 58.5646C17.6552 58.7246 9.31515 57.1646 3.15515 53.8846C-4.08485 50.2846 1.13515 43.8446 18.8152 34.5646C24.8552 32.3646 42.6952 31.7046 72.3352 32.5846C92.6165 25.0602 144.575 14.1987 228.212 0Z"
+
           />
           <path
             id="shape1"
-            transform="translate(140.685969702126, 30.0378970292838)"
+            transform="translate(45.9784305736008, 38.0157587952004)"
             fill="none"
             stroke="#000000"
-            strokeWidth="1.2"
+            strokeWidth="0.96"
             strokeLinecap="square"
             strokeLinejoin="bevel"
-            d="M29.6136 2.885C26.9549 3.84666 17.0837 3.47897 0 1.78191C14.9341 0.59397 22.4011 0 22.4011 0C28.85 0.169706 31.2541 1.13137 29.6136 2.885Z"
+            d="M106.757 0.0831558C96.8571 -0.312824 87.2405 0.70541 77.9067 3.13786C88.4284 5.79658 99.3462 6.02285 110.66 3.81668C110.151 4.21266 108.737 4.4955 106.417 4.66521C105.342 4.4955 104.833 5.76829 104.89 8.48358C87.2405 14.5364 59.2673 18.0154 20.9704 18.9205C6.6586 19.2599 -0.327617 17.5063 0.0117942 13.6596C0.1815 12.2454 11.6366 7.74819 34.3772 0.168007"
+
           />
           <path
             id="shape2"
-            transform="translate(159.438442141312, 24.8300554186276)"
+            transform="translate(141.19508645867, 30.4034168234322)"
             fill="none"
             stroke="#000000"
-            strokeWidth="1.2"
+            strokeWidth="0.96"
             strokeLinecap="square"
             strokeLinejoin="bevel"
-            d="M30.1227 2.5774C30.1227 2.5774 20.0818 2.23799 0 1.55917C15.0472 -0.816708 25.0881 -0.477297 30.1227 2.5774Z"
+            d="M15.6978 2.85889C5.23259 2.06693 0 1.67095 0 1.67095C16.518 -0.139246 26.1912 -0.478657 29.0197 0.652714"
+
           />
           <path
             id="shape3"
-            transform="translate(8.1011712587665, 5.1600000773715)"
+            transform="translate(160.117264511725, 24.5741134746343)"
             fill="none"
             stroke="#000000"
-            strokeWidth="1.2"
+            strokeWidth="0.96"
             strokeLinecap="square"
             strokeLinejoin="bevel"
-            d="M71.8188 33.12C71.8188 33.12 69.673 33.1445 65.3814 33.1935C65.3814 33.1935 64.1651 33.1935 61.7327 33.1935C41.3115 32.0055 27.7935 32.421 21.1788 34.44C-0.341171 43.48 -5.46117 50.52 5.81883 55.56C15.6588 58.2 25.3788 59.44 34.9788 59.28C107.699 61.04 152.179 60.76 168.419 58.44C176.579 55.8 178.739 52.64 174.899 48.96C159.379 40.64 151.019 36.72 149.819 37.2C145.797 37.5271 143.616 37.5775 143.276 37.3513C142.767 37.8604 142.548 39.13 142.619 41.16C117.339 49.8 85.6188 53.36 47.4588 51.84C36.3388 50.08 34.3388 47.48 41.4588 44.04C70.2588 31.24 132.779 16.56 229.019 0C224.749 2.78254 213.874 6.26685 196.394 10.4529C196.394 10.4529 188.757 13.3379 173.484 19.1079"
-          />
-          <path
-            id="shape4"
-            transform="translate(152.563792659039, 33.6017153208938)"
-            fill="none"
-            stroke="#000000"
-            strokeWidth="1.2"
-            strokeLinecap="square"
-            strokeLinejoin="bevel"
-            d="M0.00157135 5.85484C-0.0549972 3.07047 1.41578 1.11886 4.41392 0"
-          />
-          <path
-            id="shape5"
-            transform="translate(166.311520275131, 27.4074597188098)"
-            fill="none"
-            stroke="#000000"
-            strokeWidth="1.2"
-            strokeLinecap="square"
-            strokeLinejoin="bevel"
-            d="M0 2.20617C4.58205 0.735391 6.87308 0 6.87308 0"
+            d="M20.2798 0.0332033C11.2854 -0.136502 4.52548 0.34433 0 1.4757C17.8757 2.32423 26.8135 2.74849 26.8135 2.74849"
+
           />
         </svg>
       ),
@@ -1343,21 +1325,6 @@ const Builder = () => {
         </svg>
       ),
 
-      horizontal_stabilizer_top: (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.84 224.16">
-          <defs />
-          <path
-            id="shape0"
-            transform="translate(2.19513531873253, 2.71528994106006)"
-            fill="none"
-            stroke="#000000"
-            strokeWidth="0.96"
-            strokeLinecap="square"
-            strokeLinejoin="bevel"
-            d="M9.34485 85.5316C55.3916 30.7733 77.4534 4.41235 75.53 6.44881C83.1102 2.1496 90.6904 0 98.2706 0C92.6137 12.3319 81.5263 41.5779 65.0083 87.7378C63.8769 93.9603 63.9335 97.8636 65.178 99.4475C66.4225 101.71 66.6488 106.971 65.8568 115.23C63.1415 120.944 64.584 129.57 70.1843 141.11C73.635 150.953 81.4697 172.534 93.6885 205.853C95.8461 210.647 97.4049 213.885 98.3649 215.565C82.4449 214.765 72.1649 209.685 67.5249 200.325C27.9462 154.569 8.32661 131.409 8.66603 130.843C4.42338 128.015 1.84952 124.309 0.944419 119.727C-1.14862 105.302 0.237312 94.6675 5.10221 87.8227C7.13867 86.1256 8.55289 85.3619 9.34485 85.5316Z"
-          />
-        </svg>
-      ),
       vertical_stabilizer_top: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 28.32">
           <defs />
@@ -1510,6 +1477,21 @@ const Builder = () => {
             strokeLinecap="square"
             strokeLinejoin="bevel"
             d="M0 0C5.56 0.84 5.85 1.57 0.87 2.19"
+          />
+        </svg>
+      ),
+      horizontal_stabilizer_top: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.84 224.16">
+          <defs />
+          <path
+            id="shape0"
+            transform="translate(2.19513531873253, 2.71528994106006)"
+            fill="none"
+            stroke="#000000"
+            strokeWidth="0.96"
+            strokeLinecap="square"
+            strokeLinejoin="bevel"
+            d="M9.34485 85.5316C55.3916 30.7733 77.4534 4.41235 75.53 6.44881C83.1102 2.1496 90.6904 0 98.2706 0C92.6137 12.3319 81.5263 41.5779 65.0083 87.7378C63.8769 93.9603 63.9335 97.8636 65.178 99.4475C66.4225 101.71 66.6488 106.971 65.8568 115.23C63.1415 120.944 64.584 129.57 70.1843 141.11C73.635 150.953 81.4697 172.534 93.6885 205.853C95.8461 210.647 97.4049 213.885 98.3649 215.565C82.4449 214.765 72.1649 209.685 67.5249 200.325C27.9462 154.569 8.32661 131.409 8.66603 130.843C4.42338 128.015 1.84952 124.309 0.944419 119.727C-1.14862 105.302 0.237312 94.6675 5.10221 87.8227C7.13867 86.1256 8.55289 85.3619 9.34485 85.5316Z"
           />
         </svg>
       ),
@@ -1917,86 +1899,88 @@ const Builder = () => {
     });
   };
   return (
-    <div className="builderPage" style={{ position: "absolute" }}>
-      {/* <div className="viewWindow" style={{ position: "absolute", width: "80vw", height: "80vh", backgroundColor: "rgba(0,0,0,0.3)"}}> */}
-      <ViewBoard disableCanvasDrag={disableCanvasDrag}>
-        <BuilderCanvas
-          ref={front_canvas}
-          className="front_canvas"
-          // handleItemOnMove={handleItemOnMove}
-          id="front_canvas"
-          interactableItems={interactableItems.front_canvas}
-          handleDisableCanvasDrag={handleDisableCanvasDrag}
-          handleEnableCanvasDrag={handleEnableCanvasDrag}
-          handleSave={handleSave}
-          handleMouseDownPosition={handleMouseDownPosition}
-          handleMousePosition={handleMousePosition}
-          canvasHeight={canvasHeight + "px"}
-          canvasWidth={canvasWidth + "px"}
-          handleSelectItem={handleSelectItem}
-          handleTouchStartPosition={handleTouchStartPosition}
-          handleTouchEndPosition={handleTouchEndPosition}
-          handleDeselectItem={handleDeselectItem}
-          display={view == "front"}
-        />
-        <BuilderCanvas
-          ref={side_canvas}
-          className="side_canvas"
-          // handleItemOnMove={handleItemOnMove}
-          id="side_canvas"
-          interactableItems={interactableItems.side_canvas}
-          handleDisableCanvasDrag={handleDisableCanvasDrag}
-          handleEnableCanvasDrag={handleEnableCanvasDrag}
-          handleSave={handleSave}
-          handleMouseDownPosition={handleMouseDownPosition}
-          handleMousePosition={handleMousePosition}
-          canvasHeight={canvasHeight + "px"}
-          canvasWidth={canvasWidth + "px"}
-          handleSelectItem={handleSelectItem}
-          handleTouchStartPosition={handleTouchStartPosition}
-          handleTouchEndPosition={handleTouchEndPosition}
-          handleDeselectItem={handleDeselectItem}
-          display={view == "side"}
-        />
-        <BuilderCanvas
-          ref={top_canvas}
-          className="top_canvas"
-          // handleItemOnMove={handleItemOnMove}
-          id="top_canvas"
-          interactableItems={interactableItems.top_canvas}
-          handleDisableCanvasDrag={handleDisableCanvasDrag}
-          handleEnableCanvasDrag={handleEnableCanvasDrag}
-          handleSave={handleSave}
-          handleMouseDownPosition={handleMouseDownPosition}
-          handleMousePosition={handleMousePosition}
-          canvasHeight={canvasHeight + "px"}
-          canvasWidth={canvasWidth + "px"}
-          handleSelectItem={handleSelectItem}
-          handleTouchStartPosition={handleTouchStartPosition}
-          handleTouchEndPosition={handleTouchEndPosition}
-          handleDeselectItem={handleDeselectItem}
-          display={view == "top"}
-        />
-      </ViewBoard>
+    <div>
+      {/* <NavBar /> */}
+      <div className="builderPage" style={{ position: "absolute" }}>
+        {/* <div className="viewWindow" style={{ position: "absolute", width: "80vw", height: "80vh", backgroundColor: "rgba(0,0,0,0.3)"}}> */}
+        <ViewBoard disableCanvasDrag={disableCanvasDrag}>
+          <BuilderCanvas
+            ref={front_canvas}
+            className="front_canvas"
+            // handleItemOnMove={handleItemOnMove}
+            id="front_canvas"
+            interactableItems={interactableItems.front_canvas}
+            handleDisableCanvasDrag={handleDisableCanvasDrag}
+            handleEnableCanvasDrag={handleEnableCanvasDrag}
+            handleSave={handleSave}
+            handleMouseDownPosition={handleMouseDownPosition}
+            handleMousePosition={handleMousePosition}
+            canvasHeight={canvasHeight + "px"}
+            canvasWidth={canvasWidth + "px"}
+            handleSelectItem={handleSelectItem}
+            handleTouchStartPosition={handleTouchStartPosition}
+            handleTouchEndPosition={handleTouchEndPosition}
+            handleDeselectItem={handleDeselectItem}
+            display={view == "front"}
+          />
+          <BuilderCanvas
+            ref={side_canvas}
+            className="side_canvas"
+            // handleItemOnMove={handleItemOnMove}
+            id="side_canvas"
+            interactableItems={interactableItems.side_canvas}
+            handleDisableCanvasDrag={handleDisableCanvasDrag}
+            handleEnableCanvasDrag={handleEnableCanvasDrag}
+            handleSave={handleSave}
+            handleMouseDownPosition={handleMouseDownPosition}
+            handleMousePosition={handleMousePosition}
+            canvasHeight={canvasHeight + "px"}
+            canvasWidth={canvasWidth + "px"}
+            handleSelectItem={handleSelectItem}
+            handleTouchStartPosition={handleTouchStartPosition}
+            handleTouchEndPosition={handleTouchEndPosition}
+            handleDeselectItem={handleDeselectItem}
+            display={view == "side"}
+          />
+          <BuilderCanvas
+            ref={top_canvas}
+            className="top_canvas"
+            // handleItemOnMove={handleItemOnMove}
+            id="top_canvas"
+            interactableItems={interactableItems.top_canvas}
+            handleDisableCanvasDrag={handleDisableCanvasDrag}
+            handleEnableCanvasDrag={handleEnableCanvasDrag}
+            handleSave={handleSave}
+            handleMouseDownPosition={handleMouseDownPosition}
+            handleMousePosition={handleMousePosition}
+            canvasHeight={canvasHeight + "px"}
+            canvasWidth={canvasWidth + "px"}
+            handleSelectItem={handleSelectItem}
+            handleTouchStartPosition={handleTouchStartPosition}
+            handleTouchEndPosition={handleTouchEndPosition}
+            handleDeselectItem={handleDeselectItem}
+            display={view == "top"}
+          />
+        </ViewBoard>
 
-      {/* <BuilderCanvas className="side_canvas" id="side_canvas" interactableItems={interactableItems.side_canvas} />
+        {/* <BuilderCanvas className="side_canvas" id="side_canvas" interactableItems={interactableItems.side_canvas} />
         <BuilderCanvas className="top_canvas" id="top_canvas" interactableItems={interactableItems.top_canvas} /> */}
-      <SideBar
-        handleSave={handleSave}
-        planeComponents={planeComponents}
-        handleAddInteractableItems={handleAddInteractableItems}
-        view={view}
-        handleChangeView={handleChangeView}
-        handleRedo={handleRedo}
-        handleUndo={handleUndo}
-        handleDelete={handleDelete}
-        handleLayerMoveUp={handleLayerMoveUp}
-        handleLayerMoveDown={handleLayerMoveDown}
-        handleCopy={handleCopy}
-        handlePaste={handlePaste}
-      />
+        <SideBar
+          handleSave={handleSave}
+          planeComponents={planeComponents}
+          handleAddInteractableItems={handleAddInteractableItems}
+          view={view}
+          handleChangeView={handleChangeView}
+          handleRedo={handleRedo}
+          handleUndo={handleUndo}
+          handleDelete={handleDelete}
+          handleLayerMoveUp={handleLayerMoveUp}
+          handleLayerMoveDown={handleLayerMoveDown}
+          handleCopy={handleCopy}
+          handlePaste={handlePaste}
+        />
+      </div>
     </div>
-    // </div>
   );
 };
 

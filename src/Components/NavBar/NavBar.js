@@ -1,5 +1,5 @@
-import { useContext, React, useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { useContext, React, useState, useEffect} from 'react';
+import { NavLink, useLocation} from "react-router-dom";
 import AuthContext from "../../AuthContext/AuthContext";
 import styles from "./Navbar.module.css";
 import Login from "../Login/Login"
@@ -15,28 +15,36 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import * as Icon from 'react-bootstrap-icons';
 // import logo from "../../Images/logo_navbar.png";
-const NavBar = () => {
+const NavBar = (props) => {
     const navBarItems = ["Home", "Tutorial", "Builder", "Explore", "About"]
     const { images } = useContext(AuthContext);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    // useCallback(() => {
+    // console.log(useLocation())
+    // },[])
+    // console.log(useLocation())
+    let location = useLocation().pathname;
+    useEffect(() => {
+        console.log(location)
+    },[location])
     return (
         <div>
 
-            <Navbar className={"px-2 " + styles.navBar} collapseOnSelect expand="sm" bg="primary">
+            <Navbar className={"px-2 " + styles.navBar + " " + props.className} collapseOnSelect expand="sm" bg="primary">
                 {/* <Container className="justify-content-start"> */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="me-4" />
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="#/Home">
                     <img src={images["logo.svg"]} width="30" height="30" alt="Logo" />
-                    Plane Builder
+                    PLANE BUILDER
                 </Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-spacebetween">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" activeKey={location}>
                         {
                             navBarItems.map((item, index) => {
                                 return (
-                                    <Nav.Link href={"#/" + item} key={index}>
+                                    <Nav.Link href={"#/" + item} key={index} eventKey={"/" + item}>
                                         {item}
                                     </Nav.Link>
                                 )

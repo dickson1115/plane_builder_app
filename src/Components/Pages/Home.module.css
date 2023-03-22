@@ -1,6 +1,6 @@
 .background_image {
   background-image: url("../../Images/background.png");
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100vh;
@@ -13,15 +13,31 @@
 }
 
 .layer {
+  position: relative;
+  display: flex;
+  justify-content: center;
   height: 100vh;
   height: 100dvh;
+  width: 100%;
   background-color: rgba(177, 171, 157, 0.7);
-  z-index: 10;
+  z-index: 1;
+  align-items: center;
 }
 
 .myVideo {
   width: 100%;
   display: block;
+}
+
+.center {
+  position: relative;
+}
+
+.center * {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .content {
@@ -38,4 +54,17 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.navBar {
+  position: fixed;
+  width: 100%;
+}
+
+.home {
+  font-family: "BNRegular";
+}
+
+.container {
+  width: 80vw;
 }/*# sourceMappingURL=Home.module.css.map */

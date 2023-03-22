@@ -1,10 +1,15 @@
 
 import React from 'react';
+import NavBar from '../Navbar/Navbar';
 const Contact = () => {
-   
- return (
-  <div>Contact</div>
+
+  return (
+    <div>
+      {/* <NavBar /> */}
+      <div>Contact</div>
+    </div>
+
   )
 };
-  
+
 export default Contact;
