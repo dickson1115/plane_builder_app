@@ -6,7 +6,7 @@ Old versions \
 https://github.com/dickson1115/capstone_react_springBoot_fullStack \
 https://github.com/dickson1115/capstone \
 Old version demo \
-https://dickson1115.github.io/capstone/builderPage.html \
+https://dickson1115.github.io/capstone/builderPage.html
 
 
 
