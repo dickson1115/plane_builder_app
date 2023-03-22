@@ -2,7 +2,7 @@
 Current version \
 https://dickson1115.github.io/plane_builder_app/#/Builder \
 \
-Old versions
+Old versions \
 https://github.com/dickson1115/capstone_react_springBoot_fullStack \
 https://github.com/dickson1115/capstone \
 Old version demo \
