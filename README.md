@@ -1,6 +1,10 @@
 # Demo
-Current version /
-https://dickson1115.github.io/plane_builder_app/#/Builder
+Current version \
+https://dickson1115.github.io/plane_builder_app/#/Builder \
+\
+Old version
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
