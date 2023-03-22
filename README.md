@@ -13,8 +13,8 @@ https://dickson1115.github.io/capstone/builderPage.html
 https://user-images.githubusercontent.com/68040017/226839491-2c73aa6b-f2b9-4666-a10c-c3b5835583c8.mp4
 
 # Starting the Plane Builder Application
-Download the application and unzip the file \
-Install the dependencies in terimal 
+Download the application and unzip the folder \
+Install the dependencies in using the terimal 
 ```
 npm install
 ```
