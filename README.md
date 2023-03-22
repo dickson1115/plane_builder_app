@@ -1,8 +1,8 @@
 # Plane Builder Page Video Demo
 https://user-images.githubusercontent.com/68040017/226839491-2c73aa6b-f2b9-4666-a10c-c3b5835583c8.mp4
 
-# Demo
-Current version \
+# Demo 
+Current version (Github Pages) \
 https://dickson1115.github.io/plane_builder_app/#/Builder \
 \
 Old versions \
