@@ -28,7 +28,7 @@ const Home = () => {
               <h5>
                 A simple two-dimensional building board with default airplane modules allows
                 users of all ages to create their own aircraft design. The
-                building panel feature with basic toolings provides a convenient
+                building board feature with basic toolings provides a convenient
                 building board for all users.
               </h5>
             </section>

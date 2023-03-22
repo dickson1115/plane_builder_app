@@ -51,7 +51,7 @@ const NavBar = (props) => {
                             })
                         }
                     </Nav>
-                    <Button className={"p-0 " + styles.loginButton} onClick={handleShow}>
+                    <Button  className={"p-0 " + styles.loginButton} onClick={handleShow}>
                         Login/Sign up
                     </Button>
                     {/* <Button className={"navbar-collapse"} aria-controls="responsive-navbar-nav">button</Button>
