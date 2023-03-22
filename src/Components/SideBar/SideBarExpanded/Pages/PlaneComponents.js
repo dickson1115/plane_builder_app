@@ -64,7 +64,15 @@ function PlaneComponents(props) {
                     {
                       svgElement
                     }
-                    <div>{planeComponent_name.split("_")[0]}</div>
+                    <div>{(() => {
+                      
+                      const array = planeComponent_name.split("_")
+                      let displayName = array[0]
+                      for (let i = 1; i < array.length - 1; i++){
+                        displayName += " " + array[i]
+                      }
+                      return displayName
+                    })()}</div>
                   </SvgButton>
                 </Col>
               ))}

@@ -29,7 +29,7 @@ function App() {
   console.log(images);
   return (
     <AuthContext.Provider value={{
-      images: images
+      images: images 
     }}>
       {/* <DragComponent /> */}
       {/* <BuilderCanvas/> */}
@@ -40,7 +40,7 @@ function App() {
       <HashRouter>
         <Navbar currentPage={currentPage} />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Home" element={<Home />} />
           <Route exact path="/Tutorial" element={<Tutorial />} />
           <Route exact path="/Builder" element={<Builder />} />
           <Route exact path="/Explore" element={<Explore />} />

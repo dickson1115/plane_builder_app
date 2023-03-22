@@ -22,9 +22,9 @@ const BuilderCanvas = React.forwardRef(function BuilderCanvas(props, ref) {
       className={styles.canvas}
       id={props.id}
       onMouseMove={props.handleMousePosition}
-      style={{ height: props.canvasHeight, width: props.canvasWidth }}
+      style={{ height: props.canvasHeight, width: props.canvasWidth, display: (props.display) ? "" : "none" }}
       tabIndex={0}
-      onClick={handleClickCanvas}
+      onClick={props.handleDeselectItem}
     >
       {
         props.interactableItems.map((item, index) => {
