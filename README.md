@@ -14,9 +14,12 @@ https://dickson1115.github.io/capstone/builderPage.html
 
 
 
-# Getting Started with Plane Builder App 
-Download the application and unzip the file 
-Install the following dependencies 
+# Getting Started with Plane Builder App \
+Download the application and unzip the file \
+Install the dependencies in terimal \
+npm install
+After the dependencies are installed Run the Application
+npm start
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
