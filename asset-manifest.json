@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/plane_builder_app/static/css/main.db2ad78a.css",
-    "main.js": "/plane_builder_app/static/js/main.d089bd72.js",
+    "main.css": "/plane_builder_app/static/css/main.fc4c8ca2.css",
+    "main.js": "/plane_builder_app/static/js/main.d657b84b.js",
     "static/js/787.008123a3.chunk.js": "/plane_builder_app/static/js/787.008123a3.chunk.js",
+    "static/media/background.png": "/plane_builder_app/static/media/background.fbdebad5baf8c0331dc7.png",
     "static/media/medium-image.jpg": "/plane_builder_app/static/media/medium-image.12ec4e94c5709cb3cf38.jpg",
+    "static/media/background2.jpg": "/plane_builder_app/static/media/background2.f358fb7e78816d0fe5c2.jpg",
     "static/media/BebasNeueRegular.ttf": "/plane_builder_app/static/media/BebasNeueRegular.9aa03f9d52866893add5.ttf",
     "static/media/logo_with_name.svg": "/plane_builder_app/static/media/logo_with_name.c1c9f0f13942a47222fa.svg",
     "static/media/logo.svg": "/plane_builder_app/static/media/logo.1b14e53b7c5d9e786b0d.svg",
     "index.html": "/plane_builder_app/index.html",
-    "main.db2ad78a.css.map": "/plane_builder_app/static/css/main.db2ad78a.css.map",
-    "main.d089bd72.js.map": "/plane_builder_app/static/js/main.d089bd72.js.map",
+    "main.fc4c8ca2.css.map": "/plane_builder_app/static/css/main.fc4c8ca2.css.map",
+    "main.d657b84b.js.map": "/plane_builder_app/static/js/main.d657b84b.js.map",
     "787.008123a3.chunk.js.map": "/plane_builder_app/static/js/787.008123a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db2ad78a.css",
-    "static/js/main.d089bd72.js"
+    "static/css/main.fc4c8ca2.css",
+    "static/js/main.d657b84b.js"
   ]
 }
