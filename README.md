@@ -14,7 +14,10 @@ https://dickson1115.github.io/capstone/builderPage.html
 
 
 
-# Getting Started with Create React App
+# Getting Started with Plane Builder App 
+Download the application and unzip the file 
+Install the following dependencies 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
