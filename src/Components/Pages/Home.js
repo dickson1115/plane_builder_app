@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styles from './Home.module.css';
-import demoVideo from "../../demo.mp4"
+// import demoVideo from "../../demo.mp4"
 const Home = () => {
 
   return (
