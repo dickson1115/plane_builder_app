@@ -1,7 +1,7 @@
+https://user-images.githubusercontent.com/68040017/226839491-2c73aa6b-f2b9-4666-a10c-c3b5835583c8.mp4
 # Demo
 Current version \
 https://dickson1115.github.io/plane_builder_app/#/Builder \
-https://user-images.githubusercontent.com/68040017/226838683-fa56f748-d96e-4c72-ae59-661019e59de9.mp4 \
 \
 Old versions \
 https://github.com/dickson1115/capstone_react_springBoot_fullStack \
