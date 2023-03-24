@@ -1,3 +1,8 @@
-.login_modal {
+.login_modal * {
   font-family: "BebasNeueProBold";
+  color: rgb(255, 248, 233);
+}
+
+.loginButton {
+  color: rgb(79, 77, 72) !important;
 }/*# sourceMappingURL=Login.module.css.map */

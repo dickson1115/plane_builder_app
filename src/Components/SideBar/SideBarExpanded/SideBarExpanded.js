@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import * as Icon from 'react-bootstrap-icons';
 
 function SideBarExpanded(props) {
+  console.log(props.active)
   return (
     <nav className={styles.sideBarExpanded + " " + (props.active ? styles.active : "")}>
       <Container>

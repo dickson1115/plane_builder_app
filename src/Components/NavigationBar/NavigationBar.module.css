@@ -11,6 +11,12 @@
 }
 
 .loginButton {
+  background-color: transparent !important;
+  outline-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.loginButton {
   color: rgba(0, 0, 0, 0.55) !important;
 }
 

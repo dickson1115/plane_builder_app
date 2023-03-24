@@ -10824,15 +10824,52 @@ textarea.form-control-lg {
   font-family: "BebasNeueProBold";
   src: local("BebasNeueProBold"), url("../Fonts/BebasNeueProBold.ttf") format("truetype");
 }
-.btn-custom {
+.btn-transparent {
   color: rgb(79, 77, 72);
+  background: transparent;
 }
 
-.btn-custom:hover {
+.btn-transparent:hover {
   color: rgb(32, 31, 29);
+}
+
+.btn-light {
+  color: rgb(79, 77, 72);
   background: rgb(255, 248, 233);
 }
 
-.btn-custom * {
+.btn-light:hover {
+  color: rgb(32, 31, 29);
+  background: rgb(255, 230, 186);
+}
+
+.btn * {
   pointer-events: none;
+}
+
+.btn-dark {
+  color: rgb(255, 248, 233);
+}
+
+.btn-dark:hover {
+  color: rgb(32, 31, 29);
+  background: rgb(79, 77, 72);
+}
+
+.btn-dark * {
+  pointer-events: none;
+}
+
+.navbar-primary {
+  background: rgb(255, 248, 233);
+}
+
+.navbar-transparent {
+  background-image: linear-gradient(to bottom, rgb(255, 248, 233), rgba(255, 248, 233, 0));
+}
+
+@media (max-width: 576px) {
+  .navbar-transparent {
+    background-color: rgb(255, 248, 233);
+  }
 }/*# sourceMappingURL=style.css.map */

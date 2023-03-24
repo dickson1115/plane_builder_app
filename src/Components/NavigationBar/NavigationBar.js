@@ -6,9 +6,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Login from "../Login/Login";
+import Container from 'react-bootstrap/Container';
+
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
-// import Container from 'react-bootstrap/Container';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 // import styleVariables from '../../style.sass'
 // import logo from "../../Images/logo_navbar.png";
@@ -21,21 +22,24 @@ const NavigationBar = (props) => {
     let location = useLocation().pathname;
 
     return (
-        <div>
-            <Navbar
-                className={"px-2 " + styles.navBar + " " + props.className}
-                collapseOnSelect
-                expand="sm"
-                bg="primary"
-            >
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" className="me-4" />
+
+        <Navbar
+            className={"px-2 " + styles.navBar + " " + props.className}
+            collapseOnSelect
+            expand="sm"
+            // variant={(show)? "primary" : "transparent"}
+            variant={"transparent"}
+            // style={{height: "4rem"}}
+        >
+            <Container fluid>
                 <Navbar.Brand href="#/">
                     <img src={images["logo.svg"]} width="30" height="30" alt="Logo" />
                     PLANE BUILDER
                 </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className={" " + styles.toggle} />
                 <Navbar.Collapse
                     id="responsive-navbar-nav"
-                    className="justify-content-spacebetween"
+                    className="p-1"
                 >
                     <Nav className="me-auto" activeKey={location}>
                         <Nav.Link href="#/" eventKey="/">
@@ -52,8 +56,8 @@ const NavigationBar = (props) => {
                     </Button>
                 </Navbar.Collapse>
                 <Login handleClose={handleClose} show={show} />
-            </Navbar>
-        </div>
+            </Container>
+        </Navbar>
     );
 }
 export default NavigationBar;

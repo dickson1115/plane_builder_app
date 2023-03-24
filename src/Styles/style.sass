@@ -11,16 +11,58 @@
     src: local("BebasNeueProBold"), url("../Fonts/BebasNeueProBold.ttf") format("truetype")
 
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap')
-.btn-custom
-    color: $textColor
 
-.btn-custom:hover
+.btn-transparent
+    color: $textColor
+    background: transparent
+
+.btn-transparent:hover
     color: $textColorHover
+
+.btn-light
+    color: $textColor
     background: $primary
 
-.btn-custom:active
+.btn-light:hover
+    color: $textColorHover
+    background: $headerColor
 
-.btn-custom *
+.btn *
     pointer-events: none
+
+.btn-dark
+    color: $primary
+
+.btn-dark:hover
+    color: $textColorHover
+    background: $textColor
+
+
+.btn-dark *
+    pointer-events: none
+
+.navbar-primary
+    background: $primary
+
+.navbar-transparent
+    // transition: all 4s
+    // background: transparent
+    background-image: linear-gradient(to bottom, $primary, rgba(255, 248, 233,0 ))
+
+.navbar-transparent .nav-link:hover
+
+@media (max-width: 576px) 
+  .navbar-transparent
+    background-color: $primary
+    // color: $headerColor
+// .navbar-toggler-default
+//     outline: none
+//     border: none
+
+// .navbar-toggler-default 
+//     outline: none
+//     border: none
+// body.modal-open
+//     overflow-y: scroll !important
 // :root 
 //     --bs-btn-color: red

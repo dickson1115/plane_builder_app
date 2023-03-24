@@ -9,7 +9,7 @@ import Navbar from "./Components/NavigationBar/NavigationBar";
 import Tutorial from "./Components/Pages/Tutorial";
 import './Styles/style.css';
 import AuthContext from "./AuthContext/AuthContext";
-import "./App.css"; 
+import "./App.css";
 
 import TestComponent from "./Test/TestComponent";
 // import DragComponent from "./DragComponent";
@@ -30,6 +30,7 @@ function App() {
       images: images
     }}>
       {/* <TestComponent /> */}
+      {/* <BrowserRouter> */}
       <HashRouter>
         <Navbar currentPage={currentPage} />
         <Routes>
@@ -40,6 +41,7 @@ function App() {
           <Route exact path="/About" element={<About />} />
         </Routes>
       </HashRouter>
+      {/* </BrowserRouter> */}
     </AuthContext.Provider>
   );
 }

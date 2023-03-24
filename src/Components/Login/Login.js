@@ -5,6 +5,9 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import * as Icon from "react-bootstrap-icons";
 import { NavLink } from "react-router-dom";
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Container from "react-bootstrap/Container"
 function Login({ show, handleClose }) {
   return (
     <Modal
@@ -15,53 +18,65 @@ function Login({ show, handleClose }) {
       onHide={handleClose}
       className={"d-flex justify-content-center " + styles.login_modal}
     >
-      <Modal.Title
-        id="contained-modal-title-vcenter"
-        className="pt-4 pb-2 d-flex justify-content-center"
-      >
-        Login
-      </Modal.Title>
-
+      <Modal.Header className="d-flex justify-content-center">
+        <Modal.Title
+          id="contained-modal-title-vcenter"
+        // className="d-flex justify-content-center"
+        >
+          LOGIN
+        </Modal.Title>
+      </Modal.Header>
       <Modal.Body className="px-5">
         <Form>
-          <Form.Group className="py-2" controlId="formBasicEmail">
+          <Form.Group className="py-1" controlId="formBasicEmail">
             <Form.Label className="d-flex justify-content-center">
               Email
             </Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
 
-          <Form.Group className="py-2" controlId="formBasicPassword">
+          <Form.Group className="py-1" controlId="formBasicPassword">
             <Form.Label className="d-flex justify-content-center">
               Password
             </Form.Label>
             <Form.Control type="password" placeholder="Password" />
+            <div className=" d-flex justify-content-end">
+              <NavLink
+                className=""
+                href="#!"
+                style={{ textDecoration: "none", fontSize: "0.7rem" }}
+              >
+                Forgot Password?
+              </NavLink>
+            </div>
           </Form.Group>
-          <div className="d-flex justify-content-center">
-            {" "}
-            <NavLink
-              className="text-white-50"
-              href="#!"
-              style={{ textDecoration: "none" }}
-            >
-              Forgot Password
-            </NavLink>
-          </div>
 
-          <div className="pt-4 pb-2 d-flex justify-content-center">
-            <Button className="py-2 px-5" variant="primary" type="submit">
-              Login
+
+          <div className="p-1  d-flex justify-content-center">
+            <Button className={"px-5 " + styles.loginButton} variant="light" type="submit">
+              LOGIN
             </Button>
           </div>
-          <div className="pb-2 d-flex justify-content-center text-center">
-            <NavLink className={"p-2 " + styles.modalMediaAnchor}>
-              <Icon.Facebook width="1.5rem" height="1.5rem" />
+          <div className="d-flex justify-content-center text-center">
+            <NavLink className={"py-1 px-2 " + styles.modalMediaAnchor}>
+              <Icon.Facebook width="1rem" height="1rem" />
             </NavLink>
-            <NavLink className={"p-2 " + styles.modalMediaAnchor}>
-              <Icon.Github width="1.5rem" height="1.5rem" />
+            <NavLink className={"py-1 px-2 " + styles.modalMediaAnchor}>
+              <Icon.Github width="1rem" height="1rem" />
             </NavLink>
-            <NavLink className={"p-2 " + styles.modalMediaAnchor}>
-              <Icon.Google width="1.5rem" height="1.5rem" />
+            <NavLink className={"py-1 px-2 " + styles.modalMediaAnchor}>
+              <Icon.Google width="1rem" height="1rem" />
+            </NavLink>
+          </div>
+          <div className="py-1 d-flex justify-content-center">
+            <p className="me-1 " style={{fontSize: "0.9rem" }}>Need an account?</p>
+            <NavLink
+              className=""
+              href="#!"
+              style={{ textDecoration: "none", fontSize: "0.8rem" }}
+
+            >
+              Sign up
             </NavLink>
           </div>
         </Form>

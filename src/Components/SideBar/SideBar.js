@@ -11,6 +11,7 @@ function SideBar(props) {
   const [expandedSiderBar, setExpandedSiderBar] = useState("");
   const handleExpandSideBar = (event) => {
     const button_name = event.target.getAttribute('button_name');
+    console.log(event.target)
     if (button_name === expandedSiderBar) setExpandedSiderBar("");
     else setExpandedSiderBar(button_name);
   }

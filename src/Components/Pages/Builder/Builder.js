@@ -319,7 +319,7 @@ const Builder = () => {
     < div className="builderPage" style={{ position: "relative", height: "100vh" }}>
       <ViewBoard disableCanvasDrag={disableCanvasDrag}>
         {
-          ["front", "side", "top"].map((ele,index)=>
+          ["front", "side", "top"].map((ele, index) =>
             <BuilderCanvas
               key={index}
               ref={canvasRef[ele]}
@@ -342,7 +342,6 @@ const Builder = () => {
           )
         }
       </ViewBoard>
-
       <SideBar
         planeModules={planeModules}
         view={view}
@@ -357,6 +356,8 @@ const Builder = () => {
         handleCopy={handleCopy}
         handlePaste={handlePaste}
       />
+
+
     </div>
   );
 };

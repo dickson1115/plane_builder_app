@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 function SvgButton(props) {
   return (
     <Button
-      variant="custom"
+      variant="transparent"
       className={props.className + " p-0 " + styles.svgButton}
       onClick={props.onClick}
       button_name={props.button_name}
