@@ -1,0 +1,31 @@
+#sidebarCollapsed {
+  min-width: 2rem;
+  max-width: 2rem;
+  background: rgb(255, 248, 233);
+  transition: all 0.3s;
+  height: 100%;
+  margin-left: -2rem;
+  position: absolute;
+}
+
+#sidebarCollapsed.active {
+  margin-left: 0px;
+}
+
+.svgButton {
+  border-radius: 30% 0% 0% 30% !important;
+  outline-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.svgButton:hover {
+  background: rgb(251, 240, 217) !important;
+}
+
+.svgButton:active {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.svgButton.active {
+  background-color: rgb(251, 240, 217);
+}/*# sourceMappingURL=SideBarCollapsed.module.css.map */

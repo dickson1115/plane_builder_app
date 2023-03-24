@@ -1,0 +1,28 @@
+@import '../../../Styles/styleVariables.sass'
+
+#sidebarCollapsed
+    min-width: $sideBarCollapsedWidth
+    max-width: $sideBarCollapsedWidth
+    background: $primary
+    transition: all 0.3s
+    height: 100%
+    margin-left: -$sideBarCollapsedWidth
+    position: absolute
+
+#sidebarCollapsed.active
+    margin-left: 0px
+
+.svgButton
+    border-radius: 30% 0% 0% 30% !important
+    outline-color: transparent !important
+    border-color: transparent !important
+
+.svgButton:hover
+    background: $secondary !important
+
+.svgButton:active
+    color: rgba(0,0,0,0.3) !important
+
+.svgButton.active
+    background-color: $secondary
+

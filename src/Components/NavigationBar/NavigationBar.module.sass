@@ -1,0 +1,29 @@
+@import '../../Styles/styleVariables.sass'
+
+.navBar, .login_modal
+    font-family: $fontFamily
+    z-index: 3
+    display: flex
+    justify-content: start !important
+
+.modalMediaAnchor
+    background-color: rgba(0,0,0,0)
+    color: $primary
+
+.loginButton
+    color: $navbar-disabled-color !important
+
+.loginButton:hover
+    color: $navbar-hover-color !important
+
+.loginButton:active
+    color: $navbar-active-color !important
+
+.close_navbar_toggler
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 2
+

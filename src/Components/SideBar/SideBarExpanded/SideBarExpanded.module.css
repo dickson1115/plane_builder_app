@@ -1,34 +1,34 @@
 .sideBarExpanded {
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 10rem;
+  max-width: 10rem;
   background: rgb(251, 240, 217);
   transition: all 0.3s;
-  font-family: "BNRegular";
+  font-family: "BebasNeueProBold";
   color: rgb(79, 77, 72);
-  margin-left: -230px;
+  margin-left: -12rem;
   position: absolute;
   height: 100%;
 }
 
 .sideBarExpanded.active {
-  margin-left: 30px;
+  margin-left: 2rem;
   transition: all 0.3s;
-}
-
-.sideBarExpandedHeader h4 {
-  font-family: "BNRegular";
-  color: rgb(79, 77, 72);
 }
 
 .headerBar {
   background-color: rgb(255, 230, 186);
-  padding-top: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .svgButton {
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-  border-radius: 50% !important;
+  outline-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.svgButton:hover {
+  background-color: transparent !important;
+}
+
+.svgButton * {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
 }/*# sourceMappingURL=SideBarExpanded.module.css.map */

@@ -1,0 +1,48 @@
+.svgButton:active {
+  border-color: rgb(79, 77, 72);
+}
+
+.svgButton:hover {
+  background: rgb(255, 248, 233);
+  transition: all 0.3s;
+}
+
+.svgButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-color: transparent;
+  background: rgb(251, 240, 217);
+}
+
+.btn:active {
+  background-color: rgb(255, 230, 186) !important;
+  outline-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btnGroup {
+  background-color: rgb(255, 248, 233) !important;
+}
+
+.btn.active {
+  background-color: rgb(251, 240, 217) !important;
+}
+
+.container.active {
+  display: block;
+}
+
+.container {
+  margin: 0.5rem;
+  display: none;
+}
+
+.container path, ellipse {
+  stroke: rgb(79, 77, 72);
+}
+
+.container div {
+  color: rgb(79, 77, 72);
+}/*# sourceMappingURL=PlaneModulesContent.module.css.map */

@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "BNRegular";   /*Can be any text*/
-  src: local("BebasNeueRegular"),
-    url("./Fonts/BebasNeueRegular.ttf") format("truetype");
+body, html {
+  height: 100%;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap');

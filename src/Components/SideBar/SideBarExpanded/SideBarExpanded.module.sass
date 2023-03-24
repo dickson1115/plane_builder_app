@@ -1,5 +1,4 @@
-@import '../../../styleVariables.sass'
-$paddingTop: 15px
+@import '../../../Styles/styleVariables.sass'
 
 .sideBarExpanded
     min-width: $sideBarExpandedWidth
@@ -14,47 +13,20 @@ $paddingTop: 15px
 
 .sideBarExpanded.active
     margin-left: $sideBarCollapsedWidth
-    transition: all 0.3s 
-
-.sideBarExpandedHeader
-    // height: $sideBarCollapsedWidth - $paddingTop
-
-.sideBarExpandedHeader h4
-    font-family: $fontFamily
-    color: $textColor
+    transition: all 0.3s
 
 .headerBar
-    // border-bottom: 5px solid $textColor
     background-color: $headerColor
-    padding-top: $paddingTop
-    padding-left: 5px
-    padding-right: 5px
-
 
 
 .svgButton
-    width: 1.5rem !important
-    height: 1.5rem !important
-    // display: flex
-    // justify-content: center
-    // padding: 0px
-    // align-items: center
-    border-radius: 50% !important
-    // border-width: 2px
-    // border-color: $headerColor
-    // background-color: $headerColor
-    // border-style: solid
-    
-// .svgButton:hover
-//     background-color: $primary
-//     transition: all 0.3s
+    outline-color: transparent !important
+    border-color: transparent !important
 
-// .svgButton:hover
-//     svg
-//         color: $textColorHover
+.svgButton:hover
+    background-color: transparent !important
 
-// .svgButton:active
-//     color: $textColor
-//     background-color: $secondary
-//     border-color: $textColor
-//     transition: all 0.3s
+.svgButton *
+    // vertical-align: none !important
+    width: 1.2rem !important
+    height: 1.2rem !important

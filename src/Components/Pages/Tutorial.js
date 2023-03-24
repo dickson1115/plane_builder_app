@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../Navbar/Navbar';
+import NavBar from '../NavigationBar/NavigationBar';
 function Tutorial() {
   return (
     <div>

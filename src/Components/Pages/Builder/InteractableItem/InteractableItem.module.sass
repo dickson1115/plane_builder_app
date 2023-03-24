@@ -1,0 +1,24 @@
+@import '../../../../Styles/styleVariables.sass'
+.interactableItem
+    position: absolute
+    border:  solid 0.2rem rgba(0, 0, 0, 0)
+    border-radius: 2rem
+    z-index: 0
+    margin: 0rem
+    touch-action: none
+    
+
+.interactableItem *
+    pointer-events: none
+
+.interactableItem.selected
+    border-color: $textColor
+    background-color: rgb(241, 232, 211, 0.5)
+
+.interactableItem:hover
+    border-color: $textColor
+    background-color: rgb(241, 232, 211, 0.9)
+
+.interactableItem path,ellipse
+    fill: $primary
+    stroke: $textColor

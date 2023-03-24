@@ -1,3 +1,4 @@
-.svgButton:focus {
-  outline: none;
+.svgButton {
+  outline-color: transparent;
+  boarder-color: transparent;
 }/*# sourceMappingURL=SvgButton.module.css.map */
