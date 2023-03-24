@@ -1,28 +1,29 @@
 import React, { useState, useRef, useEffect } from 'react';
-import InteractableItem from './Components/Builder/BuilderCanvas/InteractableItem/InteractableItem';
-import BuilderCanvas from './Components/Builder/BuilderCanvas/BuilderCanvas';
+import styles from './TestComponent.module.css';
+// import InteractableItem from './Components/Builder/BuilderCanvas/InteractableItem/InteractableItem';
+// import BuilderCanvas from './Components/Builder/BuilderCanvas/BuilderCanvas';
 const TestComponent = () => {
 
-  const divRef = useRef(null);
-  const itemRef = useRef(null);
-  const [list, setList] = useState(null)
-  function handleButtonClick() {
-    console.log(divRef.current.attributes.getNamedItem("width"))
-    const newElement = React.createElement(InteractableItem,
-      {
-        width: divRef.current.attributes.getNamedItem("width"),
-        height: divRef.current.attributes.getNamedItem("height"),
-        viewBox: divRef.current.attributes.getNamedItem("viewBox"),
-        xmlns: divRef.current.attributes.getNamedItem("xmlns"),
-      }
-      , {children: divRef.current.innerHTML })
-    console.log(divRef.current.tagName)
-    setList(newElement)
+  // const divRef = useRef(null);
+  // const itemRef = useRef(null);
+  // const [list, setList] = useState(null)
+  // function handleButtonClick() {
+  //   console.log(divRef.current.attributes.getNamedItem("width"))
+  //   const newElement = React.createElement(InteractableItem,
+  //     {
+  //       width: divRef.current.attributes.getNamedItem("width"),
+  //       height: divRef.current.attributes.getNamedItem("height"),
+  //       viewBox: divRef.current.attributes.getNamedItem("viewBox"),
+  //       xmlns: divRef.current.attributes.getNamedItem("xmlns"),
+  //     }
+  //     , {children: divRef.current.innerHTML })
+  //   console.log(divRef.current.tagName)
+  //   setList(newElement)
     // divNode.style.backgroundColor = "red";
     // // console.log(divRef.current)
     // // console.log(React.cloneElement(divRef.current))
     // setList([...list, divRef.current])
-  }
+  // }
   // useEffect(() => {
   //   console.log(itemRef)    
   // },[itemRef])
@@ -34,25 +35,56 @@ const TestComponent = () => {
 
   // },[itemRef])
   return (
-    <div style={{ height: "500px", width: "500px", backgroundColor: "white" }}>
-      <div >
-        <button onClick={handleButtonClick}>
-          < svg ref={divRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 30" width="100" height="100">
-            <defs />
-            <path id="shape0" transform="translate(10, 6)" fill="current-color" strokeWidth="2" strokeLinecap="square" strokeLinejoin="bevel" d="M110.171 18.5119L10.157 0.491468L0 0.163823L8.51877 0.163823L110.171 8.84642L204.942 0.163823L215.263 0L205.433 0.491468Z" />
-          </svg>
-        </button>
-      </div>
+    <div show={true}  className={"modal fade " + styles.modal} id="login" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal-dialog modal-dialog-centered d-flex justify-content-center">
+        <div className="modal-content " style={{ borderRadius: "1rem" }}>
+          <section className={"gradient-custom "}>
+            <div className="container p-0">
+              <div>
+                <div>
+                  <div className="card bg-dark text-white" style={{ borderRadius: "1rem" }}>
+                    <div className="card-body p-5 text-center">
 
-      {console.log(list)}
-      {list}
-      {/* {list.map((ele)=>console.log(ele))} */}
-      {/* {console.log(React.Children.map(divRef.current, (ele) => {
-        return React.cloneElement(ele)
-      }))} */}
+                      <div className="mb-md-4 pb-1">
+                        <h2 className="mb-2 text-uppercase" style={{ fontFamily: "BNRegular" }} > Login</h2>
+                        <p className="text-white-50 mb-5">Please enter your login and password!</p>
 
-      <InteractableItem ><div ref={itemRef} height={"100px"} width={"100px"}>test</div></InteractableItem>
-    </div>
+                        <div className="form-outline form-white mb-4">
+                          <input type="email" id="typeEmailX" className="form-control form-control-lg" />
+                          <label className="form-label h5" htmlFor="typeEmailX" style={{ fontFamily: "BNRegular" }} >Email</label>
+                        </div>
+
+                        <div className="form-outline form-white mb-4">
+                          <input type="password" id="typePasswordX" className="form-control form-control-lg" />
+                          <label className="form-label h5" htmlFor="typePasswordX" style={{ fontFamily: "BNRegular" }} >Password</label>
+                        </div>
+
+                        <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
+
+                        <button className="btn btn-outline-light btn-lg px-5" type="submit" style={{ fontFamily: "BNRegular" }} >Login</button>
+
+                        <div className="d-flex justify-content-center text-center mt-4 pt-1">
+                          <button href="#!" className="btn btn-lg text-white"><i className="bi bi-facebook p-2"></i></button>
+                          <button href="#!" className="btn btn-lg text-white"><i className="bi bi-twitter p-2"></i></button>
+                          <button href="#!" className="btn btn-lg text-white"><i className="bi bi-google p-2"></i></button>
+                        </div>
+
+                      </div>
+
+                      <div>
+                        <p className="mb-0">Don't have an account? <a href="#!" className="text-white-50 fw-bold">Sign Up</a>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div >
+    </div >
 
   );
 };

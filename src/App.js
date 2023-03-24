@@ -11,7 +11,7 @@ import './Styles/style.css';
 import AuthContext from "./AuthContext/AuthContext";
 import "./App.css"; 
 
-// import TestComponent from "./TestComponent";
+import TestComponent from "./Test/TestComponent";
 // import DragComponent from "./DragComponent";
 // import ViewBoard from "./Components/Builder/ViewBoard"
 // import BuilderCanvas from "./Components/Builder/BuilderCanvas/BuilderCanvas";
@@ -29,6 +29,7 @@ function App() {
     <AuthContext.Provider value={{
       images: images
     }}>
+      {/* <TestComponent /> */}
       <HashRouter>
         <Navbar currentPage={currentPage} />
         <Routes>
