@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/plane_builder_app/static/css/main.5152d915.css",
-    "main.js": "/plane_builder_app/static/js/main.298d9308.js",
+    "main.css": "/plane_builder_app/static/css/main.3e2fb2f6.css",
+    "main.js": "/plane_builder_app/static/js/main.6b455997.js",
     "static/js/787.008123a3.chunk.js": "/plane_builder_app/static/js/787.008123a3.chunk.js",
     "static/media/demo_1080p.mp4": "/plane_builder_app/static/media/demo_1080p.334dea1d28969bed3898.mp4",
     "static/media/background.png": "/plane_builder_app/static/media/background.fbdebad5baf8c0331dc7.png",
@@ -10,12 +10,12 @@
     "static/media/logo_with_name.svg": "/plane_builder_app/static/media/logo_with_name.c1c9f0f13942a47222fa.svg",
     "static/media/logo.svg": "/plane_builder_app/static/media/logo.1b14e53b7c5d9e786b0d.svg",
     "index.html": "/plane_builder_app/index.html",
-    "main.5152d915.css.map": "/plane_builder_app/static/css/main.5152d915.css.map",
-    "main.298d9308.js.map": "/plane_builder_app/static/js/main.298d9308.js.map",
+    "main.3e2fb2f6.css.map": "/plane_builder_app/static/css/main.3e2fb2f6.css.map",
+    "main.6b455997.js.map": "/plane_builder_app/static/js/main.6b455997.js.map",
     "787.008123a3.chunk.js.map": "/plane_builder_app/static/js/787.008123a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5152d915.css",
-    "static/js/main.298d9308.js"
+    "static/css/main.3e2fb2f6.css",
+    "static/js/main.6b455997.js"
   ]
 }
