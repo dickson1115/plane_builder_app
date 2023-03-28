@@ -14,13 +14,13 @@ function Login({ setShowRegister, setShowLogin, showLogin }) {
   return (
     <Modal
       show={showLogin}
-      size="lg"
+      size="md"
       // aria-labelledby="contained-modal-title-vcenter"
       centered
       onHide={() => {
         setShowLogin(false);
       }}
-      className={"d-flex justify-content-center " + styles.login_modal}
+      className={"" + styles.login_modal}
     >
       <Modal.Header
         className={`mx-5 d-flex justify-content-center ${styles.header}`}

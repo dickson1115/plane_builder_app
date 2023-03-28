@@ -32,20 +32,20 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
             onHide={() => {
                 setShowRegister(false);
             }}
-            className={`d-flex justify-content-center ${styles.modal}`}
-            size="lg"
+            className={` ${styles.modal}`}
+            size="md"
             //   aria-labelledby="contained-modal-title-vcenter"
             centered
         >
             <Modal.Header
-                className={`mx-5 d-flex justify-content-center ${styles.header}`}
+                className={`mx-5  ${styles.header}`}
             >
                 <Modal.Title className="bold">REGISTER</Modal.Title>
             </Modal.Header>
             <Form>
                 <Modal.Body className="mx-5 pb-0">
                     <FormGroup className="my-2">
-                        <FormLabel htmlFor="email" className="d-flex justify-content-center">Email</FormLabel>
+                        <FormLabel htmlFor="email" className="">Email</FormLabel>
                         <FormControl
                             id="email"
                             type="email"
@@ -57,7 +57,7 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                         />
                     </FormGroup>
                     <FormGroup className="my-2">
-                        <FormLabel htmlFor="password" className="d-flex justify-content-center">Password</FormLabel>
+                        <FormLabel htmlFor="password" className="">Password</FormLabel>
                         <FormControl
                             className={password == "" || validPassword ? "" : styles.invalid}
                             id="password"
@@ -68,7 +68,7 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                             }}
                             value={password}
                         />
-                        <div className="px-1 mb-1" style={{ fontSize: "0.8rem" }}>
+                        <div className="m-1" style={{ fontSize: "0.8rem" }}>
                             <p
                                 className={`m-0 ${password == "" || HAVE_ONE_LETTER_REGEX.test(password)
                                     ? styles.hidden
@@ -91,12 +91,12 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                                     : styles.show
                                     }`}
                             >
-                                8-26 characters long{" "}
+                                Must be 8-26 characters long{" "}
                             </p>
                         </div>
                     </FormGroup>
                     <FormGroup className="my-2">
-                        <FormLabel htmlFor="confirm_password" className="d-flex justify-content-center">Confirm Password</FormLabel>
+                        <FormLabel htmlFor="confirm_password" className="">Confirm Password</FormLabel>
                         <FormControl
                             className={
                                 confirmPassword == "" || validConfirmPassword
@@ -111,7 +111,7 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                             }}
                             value={confirmPassword}
                         />
-                        <div className="p-1" style={{ fontSize: "0.8rem" }}>
+                        <div className="m-1" style={{ fontSize: "0.8rem" }}>
                             <p
                                 className={`m-0 ${confirmPassword == "" || validConfirmPassword
                                     ? styles.hidden
