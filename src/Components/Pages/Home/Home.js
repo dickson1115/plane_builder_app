@@ -13,7 +13,7 @@ const Home = () => {
       <div className={styles.background_image}>
         <div className={styles.layer}>
           <div className={styles.center}>
-            <h1>Quick Sketch Your Plane Design</h1>
+            <h1 className="bold">Quick Sketch Your Plane Design</h1>
             <h5>
               Create a rough draft of a plane's design with a simple stability
               analysis
@@ -25,7 +25,7 @@ const Home = () => {
         <Row className="my-5">
           <Col>
             <section>
-              <h1>Introduction</h1>
+              <h1 className="bold">Introduction</h1>
               <h5>
                 A simple two-dimensional building board with default airplane modules allows
                 users of all ages to create their own aircraft design. The
@@ -39,7 +39,7 @@ const Home = () => {
         <Row className="my-5">
           <Col>
             <section>
-              <h1>Up Coming Feature</h1>
+              <h1 className="bold">Up Coming Feature</h1>
               <h5>
                 Data Inputting - The building board will provide input space for
                 user to enter their airplane's varibles like wing's length,
@@ -68,7 +68,7 @@ const Home = () => {
 
           <Col>
             <section>
-              <h1>Demo Video</h1>
+              <h1 className={styles.header}>Demo Video</h1>
               <video autoPlay muted loop className={styles.myVideo}>
                 <source src={demoVideo} type="video/mp4" />
                 {/* <div className={styles.layer}>

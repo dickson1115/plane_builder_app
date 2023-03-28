@@ -1,5 +1,5 @@
 .navBar, .login_modal {
-  font-family: "BebasNeueProBold";
+  font-family: "BebasNeueProRegular";
   z-index: 3;
   display: flex;
   justify-content: start !important;

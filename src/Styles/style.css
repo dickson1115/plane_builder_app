@@ -10824,6 +10824,10 @@ textarea.form-control-lg {
   font-family: "BebasNeueProBold";
   src: local("BebasNeueProBold"), url("../Fonts/BebasNeueProBold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "BebasNeueProRegular";
+  src: local("BebasNeueProRegular"), url("../Fonts/BebasNeueProRegular.ttf") format("truetype");
+}
 .btn-transparent {
   color: rgb(79, 77, 72);
   background: transparent;

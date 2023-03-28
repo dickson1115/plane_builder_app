@@ -29,7 +29,6 @@ function App() {
     <AuthContext.Provider value={{
       images: images
     }}>
-      {/* <TestComponent /> */}
       {/* <BrowserRouter> */}
       <HashRouter>
         <Navbar currentPage={currentPage} />
@@ -43,6 +42,7 @@ function App() {
       </HashRouter>
       {/* </BrowserRouter> */}
     </AuthContext.Provider>
+    // <TestComponent />
   );
 }
 export default App;

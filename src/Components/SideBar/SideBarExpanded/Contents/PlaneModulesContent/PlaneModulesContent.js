@@ -60,7 +60,7 @@ function PlaneModulesPage(props) {
               }
               onClick={handleChangeView}
             >
-              {ele}
+              {ele.charAt(0).toUpperCase() + ele.slice(1)}
             </Button>
           ))}
         </ButtonGroup>
@@ -89,9 +89,9 @@ function PlaneModulesPage(props) {
                         {(() => {
                           const plane_module_name_array =
                             plane_module_name.split("_");
-                          let displayName = plane_module_name_array[0];
+                          let displayName = plane_module_name_array[0].charAt(0).toUpperCase() + plane_module_name_array[0].slice(1);
                           for (let i = 1; i < plane_module_name_array.length - 1; i++) {
-                            displayName += " " + plane_module_name_array[i];
+                            displayName += " " + plane_module_name_array[i].charAt(0).toUpperCase() + plane_module_name_array[i].slice(1);
                           }
                           return displayName;
                         })()}

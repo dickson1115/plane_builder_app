@@ -7,14 +7,13 @@ import Col from 'react-bootstrap/Col'
 import * as Icon from 'react-bootstrap-icons';
 
 function SideBarExpanded(props) {
-  console.log(props.active)
   return (
     <nav className={styles.sideBarExpanded + " " + (props.active ? styles.active : "")}>
       <Container>
         <Row className = {styles.headerBar + " p-2"}>
           <Col className = "p-0"/>
           <Col className = "p-0">
-            <h4 className = "mb-0" >{props.header}</h4>
+            <h4 className = "mb-0 bold" >{props.header}</h4>
           </Col>
           <Col className = "p-0 d-flex justify-content-end">
             <SvgButton className={styles.svgButton} onClick={props.onClick}>

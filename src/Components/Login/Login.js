@@ -5,44 +5,62 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import * as Icon from "react-bootstrap-icons";
 import { NavLink } from "react-router-dom";
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
-import Container from "react-bootstrap/Container"
-function Login({ show, handleClose }) {
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+function Login({ setShowRegister, setShowLogin, showLogin }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <Modal
-      show={show}
+      show={showLogin}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
+      // aria-labelledby="contained-modal-title-vcenter"
       centered
-      onHide={handleClose}
+      onHide={() => {
+        setShowLogin(false);
+      }}
       className={"d-flex justify-content-center " + styles.login_modal}
     >
-      <Modal.Header className="d-flex justify-content-center">
+      <Modal.Header className={`d-flex justify-content-center ${styles.header}`}>
         <Modal.Title
           id="contained-modal-title-vcenter"
-        // className="d-flex justify-content-center"
+          className="bold"
+          // className="d-flex justify-content-center"
         >
           LOGIN
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className="px-5">
+      <Modal.Body className="mx-5">
         <Form>
-          <Form.Group className="py-1" controlId="formBasicEmail">
+          <Form.Group className="my-1" controlId="formBasicEmail">
             <Form.Label className="d-flex justify-content-center">
               Email
             </Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control
+              type="email"
+              placeholder="Enter email"
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+              value={email}
+            />
           </Form.Group>
 
-          <Form.Group className="py-1" controlId="formBasicPassword">
+          <Form.Group className="my-1" controlId="formBasicPassword">
             <Form.Label className="d-flex justify-content-center">
               Password
             </Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control
+              type="password"
+              placeholder="Password"
+              onChange={(event) => {
+                setPassword(event.target.value);
+              }}
+              value={password}
+            />
             <div className=" d-flex justify-content-end">
               <NavLink
-                className=""
                 href="#!"
                 style={{ textDecoration: "none", fontSize: "0.7rem" }}
               >
@@ -51,33 +69,46 @@ function Login({ show, handleClose }) {
             </div>
           </Form.Group>
 
-
-          <div className="p-1  d-flex justify-content-center">
-            <Button className={"px-5 " + styles.loginButton} variant="light" type="submit">
+          <div className="m-1  d-flex justify-content-center">
+            <Button
+              className={"bold px-5 " + styles.loginButton}
+              variant="light"
+              type="submit"
+            >
               LOGIN
             </Button>
           </div>
           <div className="d-flex justify-content-center text-center">
-            <NavLink className={"py-1 px-2 " + styles.modalMediaAnchor}>
+            <NavLink className={"my-1 mx-2 " + styles.modalMediaAnchor}>
               <Icon.Facebook width="1rem" height="1rem" />
             </NavLink>
-            <NavLink className={"py-1 px-2 " + styles.modalMediaAnchor}>
+            <NavLink className={"my-1 mx-2 " + styles.modalMediaAnchor}>
               <Icon.Github width="1rem" height="1rem" />
             </NavLink>
-            <NavLink className={"py-1 px-2 " + styles.modalMediaAnchor}>
+            <NavLink className={"my-1 mx-2 " + styles.modalMediaAnchor}>
               <Icon.Google width="1rem" height="1rem" />
             </NavLink>
           </div>
-          <div className="py-1 d-flex justify-content-center">
-            <p className="me-1 " style={{fontSize: "0.9rem" }}>Need an account?</p>
-            <NavLink
-              className=""
-              href="#!"
-              style={{ textDecoration: "none", fontSize: "0.8rem" }}
-
+          <div className="mb-4 d-flex justify-content-center flex-wrap">
+            <p
+              className={`p-0 my-0 me-1 d-flex flex-wrap`}
+              style={{ fontSize: "0.8rem", alignContent: "center" }}
+            >
+              Need an account?
+            </p>
+            {/* <NavLink className={styles.small} href="#!" style={{ textDecoration: "none" }}>
+              Sign up
+            </NavLink> */}
+            <Button
+              className={`p-0 ${styles.signupButton}`}
+              variant="transparent"
+              onClick={() => {
+                setShowLogin(false);
+                setShowRegister(true);
+              }}
             >
               Sign up
-            </NavLink>
+            </Button>
           </div>
         </Form>
       </Modal.Body>

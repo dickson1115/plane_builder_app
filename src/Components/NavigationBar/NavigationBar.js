@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Login from "../Login/Login";
 import Container from 'react-bootstrap/Container';
+import Register from "../Register/Register";
 
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -14,9 +15,8 @@ import Container from 'react-bootstrap/Container';
 // import styleVariables from '../../style.sass'
 // import logo from "../../Images/logo_navbar.png";
 const NavigationBar = (props) => {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [showLogin, setShowLogin] = useState(false);
+    const [showRegister, setShowRegister] = useState(false);
     const navBarItems = ["Tutorial", "Builder", "Explore", "About"];
     const { images } = useContext(AuthContext);
     let location = useLocation().pathname;
@@ -32,7 +32,7 @@ const NavigationBar = (props) => {
             // style={{height: "4rem"}}
         >
             <Container fluid>
-                <Navbar.Brand href="#/">
+                <Navbar.Brand href="#/" className="bold">
                     <img src={images["logo.svg"]} width="30" height="30" alt="Logo" />
                     PLANE BUILDER
                 </Navbar.Brand>
@@ -51,11 +51,12 @@ const NavigationBar = (props) => {
                             </Nav.Link>
                         ))}
                     </Nav>
-                    <Button className={"p-0 " + styles.loginButton} onClick={handleShow}>
+                    <Button className={"p-0 " + styles.loginButton} onClick={()=>{setShowLogin(true)}}>
                         Login/Sign up
                     </Button>
                 </Navbar.Collapse>
-                <Login handleClose={handleClose} show={show} />
+                <Register setShowRegister={setShowRegister} setShowLogin={setShowLogin} showRegister={showRegister}  />
+                <Login setShowRegister={setShowRegister} setShowLogin={setShowLogin} showLogin={showLogin} />
             </Container>
         </Navbar>
     );

@@ -1,16 +1,20 @@
-.view {
-  width: 3000px;
-  height: 1000px;
-  background-color: red;
+.modal * {
+  transition: all 0.3s;
 }
 
-.easel {
-  transform: translate(250px, -250px);
-  width: 2500px;
-  height: 1500px;
+.hidden {
+  height: 0rem;
+  overflow: hidden;
 }
 
-.canvas {
-  width: 500px;
-  height: 300px;
+.show {
+  height: 0.8rem;
+}
+
+.invalid:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 130, 130, 0.55);
+}
+
+.invalid {
+  border-color: red;
 }/*# sourceMappingURL=TestComponent.module.css.map */

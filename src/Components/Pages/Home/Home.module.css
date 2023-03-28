@@ -1,6 +1,6 @@
 .home {
   position: absolute;
-  font-family: "BebasNeueProBold";
+  font-family: "BebasNeueProRegular";
   top: 0;
   left: 0;
   right: 0;
@@ -33,6 +33,10 @@
 .myVideo {
   width: 100%;
   display: block;
+}
+
+.header {
+  font-family: "BebasNeueProBold" !important;
 }
 
 .center {
