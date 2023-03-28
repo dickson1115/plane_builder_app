@@ -22,11 +22,11 @@
 }
 
 .invalid:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 130, 130, 0.55);
+  box-shadow: 0 0 0 0.25rem rgba(255, 130, 130, 0.55) !important;
 }
 
 .invalid {
-  border-color: red;
+  border-color: red !important;
 }
 
 .header {
@@ -34,5 +34,5 @@
 }
 
 .footer {
-  border-color: rgb(255, 248, 233);
+  border-color: transparent !important;
 }/*# sourceMappingURL=Register.module.css.map */

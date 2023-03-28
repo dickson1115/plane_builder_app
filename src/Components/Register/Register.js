@@ -22,31 +22,30 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
             HAVE_ONE_LETTER_REGEX.test(password) &&
             SIZE_8_TO_26_REGEX.test(password)
         );
+        console.log(validPassword);
         setValidConfirmPassword(password === confirmPassword);
     }, [password, confirmPassword]);
 
     return (
         <Modal
             show={showRegister}
-            onHide={()=>{setShowRegister(false)}}
-            className={`${styles.modal}`}
+            onHide={() => {
+                setShowRegister(false);
+            }}
+            className={`d-flex justify-content-center ${styles.modal}`}
             size="lg"
             //   aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Header className={`px-5 ${styles.header}`}>
-                <Modal.Title
-
-                    className="bold"
-                // className="d-flex justify-content-center"
-                >
-                    REGISTER
-                </Modal.Title>
+            <Modal.Header
+                className={`mx-5 d-flex justify-content-center ${styles.header}`}
+            >
+                <Modal.Title className="bold">REGISTER</Modal.Title>
             </Modal.Header>
             <Form>
-                <Modal.Body className="mx-5 px-0">
-                    <FormGroup className="mb-2">
-                        <FormLabel htmlFor="email">Email</FormLabel>
+                <Modal.Body className="mx-5 pb-0">
+                    <FormGroup className="my-2">
+                        <FormLabel htmlFor="email" className="d-flex justify-content-center">Email</FormLabel>
                         <FormControl
                             id="email"
                             type="email"
@@ -57,8 +56,8 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                             value={email}
                         />
                     </FormGroup>
-                    <FormGroup className="mb-2">
-                        <FormLabel htmlFor="password">Password</FormLabel>
+                    <FormGroup className="my-2">
+                        <FormLabel htmlFor="password" className="d-flex justify-content-center">Password</FormLabel>
                         <FormControl
                             className={password == "" || validPassword ? "" : styles.invalid}
                             id="password"
@@ -69,7 +68,7 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                             }}
                             value={password}
                         />
-                        <div className="p-1" style={{ fontSize: "0.8rem" }}>
+                        <div className="px-1 mb-1" style={{ fontSize: "0.8rem" }}>
                             <p
                                 className={`m-0 ${password == "" || HAVE_ONE_LETTER_REGEX.test(password)
                                     ? styles.hidden
@@ -96,8 +95,8 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                             </p>
                         </div>
                     </FormGroup>
-                    <FormGroup className="mb-2">
-                        <FormLabel htmlFor="confirm_password">Confirm Password</FormLabel>
+                    <FormGroup className="my-2">
+                        <FormLabel htmlFor="confirm_password" className="d-flex justify-content-center">Confirm Password</FormLabel>
                         <FormControl
                             className={
                                 confirmPassword == "" || validConfirmPassword
@@ -123,21 +122,25 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                             </p>
                         </div>
                     </FormGroup>
+
                 </Modal.Body>
-                <Modal.Footer className = {styles.footer}>
-                    <Button variant="primary" type="submit">Submit</Button>
+                <Modal.Footer className={`${styles.footer}`}>
+                    <Button className="py-1 px-2" variant="primary" type="submit">
+                        Submit
+                    </Button>
                     <Button
+                        className="py-1 px-2"
                         variant="primary"
                         onClick={() => {
-                            setShowRegister(false)
-                            setShowLogin(true)
+                            setShowRegister(false);
+                            setShowLogin(true);
                         }}
                     >
                         Back
                     </Button>
                 </Modal.Footer>
             </Form>
-        </Modal>
+        </Modal >
     );
 };
 

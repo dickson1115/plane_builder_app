@@ -22,18 +22,14 @@ function Login({ setShowRegister, setShowLogin, showLogin }) {
       }}
       className={"d-flex justify-content-center " + styles.login_modal}
     >
-      <Modal.Header className={`d-flex justify-content-center ${styles.header}`}>
-        <Modal.Title
-          id="contained-modal-title-vcenter"
-          className="bold"
-          // className="d-flex justify-content-center"
-        >
-          LOGIN
-        </Modal.Title>
+      <Modal.Header
+        className={`mx-5 d-flex justify-content-center ${styles.header}`}
+      >
+        <Modal.Title className="bold">LOGIN</Modal.Title>
       </Modal.Header>
       <Modal.Body className="mx-5">
         <Form>
-          <Form.Group className="my-1" controlId="formBasicEmail">
+          <Form.Group className="my-2" controlId="formBasicEmail">
             <Form.Label className="d-flex justify-content-center">
               Email
             </Form.Label>
@@ -47,7 +43,7 @@ function Login({ setShowRegister, setShowLogin, showLogin }) {
             />
           </Form.Group>
 
-          <Form.Group className="my-1" controlId="formBasicPassword">
+          <Form.Group className="my-2" controlId="formBasicPassword">
             <Form.Label className="d-flex justify-content-center">
               Password
             </Form.Label>
@@ -59,7 +55,7 @@ function Login({ setShowRegister, setShowLogin, showLogin }) {
               }}
               value={password}
             />
-            <div className=" d-flex justify-content-end">
+            <div className="mt-1 d-flex justify-content-end">
               <NavLink
                 href="#!"
                 style={{ textDecoration: "none", fontSize: "0.7rem" }}
@@ -69,7 +65,7 @@ function Login({ setShowRegister, setShowLogin, showLogin }) {
             </div>
           </Form.Group>
 
-          <div className="m-1  d-flex justify-content-center">
+          <div className="my-2  d-flex justify-content-center">
             <Button
               className={"bold px-5 " + styles.loginButton}
               variant="light"
