@@ -32,7 +32,7 @@ const NavigationBar = (props) => {
             // style={{height: "4rem"}}
         >
             <Container fluid>
-                <Navbar.Brand href="#/" className="bold">
+                <Navbar.Brand eventKey="/" href="#/" className="bold" >
                     <img src={images["logo.svg"]} width="30" height="30" alt="Logo" />
                     PLANE BUILDER
                 </Navbar.Brand>
