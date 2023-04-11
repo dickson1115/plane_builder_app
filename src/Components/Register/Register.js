@@ -124,7 +124,7 @@ const Register = ({ setShowRegister, setShowLogin, showRegister }) => {
                     </FormGroup>
 
                 </Modal.Body>
-                <Modal.Footer className={`${styles.footer}`}>
+                <Modal.Footer className={`mx-5 my-3 ${styles.footer}`}>
                     <Button className="py-1 px-2" variant="primary" type="submit">
                         Submit
                     </Button>
