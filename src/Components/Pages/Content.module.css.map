@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,QAAQ,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,GAAG,ECSQ,IAAI;CDTM",
+    "sources": [
+        "Content.module.sass",
+        "../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "Content.module.css"
+}

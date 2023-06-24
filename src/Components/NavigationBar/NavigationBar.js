@@ -17,7 +17,6 @@ import Register from "../Register/Register";
 const NavigationBar = (props) => {
     const [showLogin, setShowLogin] = useState(false);
     const [showRegister, setShowRegister] = useState(false);
-    const navBarItems = ["Tutorial", "Builder", "Explore", "About"];
     const { images } = useContext(AuthContext);
     let location = useLocation().pathname;
 
@@ -42,10 +41,10 @@ const NavigationBar = (props) => {
                     className="p-1"
                 >
                     <Nav className="me-auto" activeKey={location}>
-                        <Nav.Link href="#/" eventKey="/">
+                        {/* <Nav.Link href="#/" eventKey="/">
                             Home
-                        </Nav.Link>
-                        {navBarItems.map((item, index) => (
+                        </Nav.Link> */}
+                        {props.items.map((item, index) => (
                             <Nav.Link href={"#/" + item} key={index} eventKey={"/" + item}>
                                 {item}
                             </Nav.Link>

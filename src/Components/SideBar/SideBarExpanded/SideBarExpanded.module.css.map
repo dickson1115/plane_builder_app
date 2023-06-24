@@ -1,1 +1,10 @@
-{"version":3,"sources":["SideBarExpanded.module.sass","../../../Styles/styleVariables.sass","SideBarExpanded.module.css"],"names":[],"mappings":"AAEA;EACI,gBCiBmB;EDhBnB,gBCgBmB;EDfnB,8BCDQ;EDER,oBAAA;EACA,kCCCS;EDAT,sBCFQ;EDGR,mBAAA;EACA,kBAAA;EACA,YAAA;AEDJ;;AFGA;EACI,iBCOoB;EDNpB,oBAAA;AEAJ;;AFEA;EACI,oCCbU;ACcd;;AFEA;EACI,qCAAA;EACA,oCAAA;AECJ;;AFCA;EACI,wCAAA;AEEJ;;AFAA;EAEI,wBAAA;EACA,yBAAA;AEEJ","file":"SideBarExpanded.module.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EACb,SAAS,ECiBU,KAAK;EDhBxB,SAAS,ECgBU,KAAK;EDfxB,UAAU,ECDF,OAAkB;EDE1B,UAAU,EAAE,QAAQ;EACpB,WAAW,ECCF,qBAAqB;EDA9B,KAAK,ECFG,OAAe;EDGvB,WAAW,EAAE,MAAgD;EAC7D,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;CAAG;;AAEnB,AAAA,gBAAgB,AAAA,OAAO,CAAC;EACpB,WAAW,ECOS,IAAI;EDNxB,UAAU,EAAE,QAAQ;CAAG;;AAE3B,AAAA,UAAU,CAAC;EACP,gBAAgB,ECbN,OAAkB;CDaK;;AAGrC,AAAA,UAAU,CAAC;EACP,aAAa,EAAE,sBAAsB;EACrC,YAAY,EAAE,sBAAsB;CAAG;;AAE3C,AAAA,UAAU,AAAA,MAAM,CAAC;EACb,gBAAgB,EAAE,sBAAsB;CAAG;;AAE/C,AAAA,UAAU,CAAC,CAAC,CAAC;EAET,KAAK,EAAE,iBAAiB;EACxB,MAAM,EAAE,iBAAiB;CAAG",
+    "sources": [
+        "SideBarExpanded.module.sass",
+        "../../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "SideBarExpanded.module.css"
+}

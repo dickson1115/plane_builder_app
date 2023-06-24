@@ -1,13 +1,23 @@
+.navBar {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+}
+
 .navBar, .login_modal {
   font-family: "BebasNeueProRegular";
   z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
 }
 
 .modalMediaAnchor {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 248, 233);
+  color: #fff8e9;
 }
 
 .loginButton {
@@ -35,4 +45,5 @@
   height: 100%;
   width: 100%;
   z-index: 2;
-}/*# sourceMappingURL=NavigationBar.module.css.map */
+}
+/*# sourceMappingURL=NavigationBar.module.css.map */

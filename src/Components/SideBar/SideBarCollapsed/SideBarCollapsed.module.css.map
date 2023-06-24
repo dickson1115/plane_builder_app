@@ -1,1 +1,10 @@
-{"version":3,"sources":["SideBarCollapsed.module.sass","../../../Styles/styleVariables.sass","SideBarCollapsed.module.css"],"names":[],"mappings":"AAEA;EACI,eCkBoB;EDjBpB,eCiBoB;EDhBpB,8BCFM;EDGN,oBAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;AEDJ;;AFGA;EACI,gBAAA;AEAJ;;AFEA;EACI,uCAAA;EACA,qCAAA;EACA,oCAAA;AECJ;;AFCA;EACI,yCAAA;AEEJ;;AFAA;EACI,oCAAA;AEGJ;;AFDA;EACI,oCCtBQ;AC0BZ","file":"SideBarCollapsed.module.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EACd,SAAS,ECkBW,IAAI;EDjBxB,SAAS,ECiBW,IAAI;EDhBxB,UAAU,ECFJ,OAAkB;EDGxB,UAAU,EAAE,QAAQ;EACpB,MAAM,EAAE,IAAI;EACZ,WAAW,ECaS,KAAI;EDZxB,QAAQ,EAAE,QAAQ;CAAG;;AAEzB,AAAA,iBAAiB,AAAA,OAAO,CAAC;EACrB,WAAW,EAAE,GAAG;CAAG;;AAEvB,AAAA,UAAU,CAAC;EACP,aAAa,EAAE,wBAAwB;EACvC,aAAa,EAAE,sBAAsB;EACrC,YAAY,EAAE,sBAAsB;CAAG;;AAE3C,AAAA,UAAU,AAAA,MAAM,CAAC;EACb,UAAU,EChBF,OAAkB,CDgBH,UAAU;CAAG;;AAExC,AAAA,UAAU,AAAA,OAAO,CAAC;EACd,KAAK,EAAE,kBAAe,CAAC,UAAU;CAAG;;AAExC,AAAA,UAAU,AAAA,OAAO,CAAC;EACd,gBAAgB,ECtBR,OAAkB;CDsBK",
+    "sources": [
+        "SideBarCollapsed.module.sass",
+        "../../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "SideBarCollapsed.module.css"
+}

@@ -1,1 +1,10 @@
-{"version":3,"sources":["SvgButton.module.sass","SvgButton.module.css"],"names":[],"mappings":"AACA;EACQ,0BAAA;EACA,0BAAA;ACAR","file":"SvgButton.module.css"}
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,UAAU,CAAC;EACH,aAAa,EAAE,WAAW;EAC1B,aAAa,EAAE,WAAW;CAAG",
+    "sources": [
+        "SvgButton.module.sass",
+        "../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "SvgButton.module.css"
+}

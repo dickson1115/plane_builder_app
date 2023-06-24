@@ -81,6 +81,7 @@ function ViewBoard(props) {
                     maxScale={imageScale * zoomFactor}
                     centerOnInit
                     disabled={props.disableCanvasDrag}
+                    wheel={{step:0.05}}
                 >
                     <TransformComponent
                         key={`${containerWidth}x${containerHeight}`}

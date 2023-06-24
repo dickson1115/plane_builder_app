@@ -1,1 +1,10 @@
-{"version":3,"sources":["ViewBoard.module.sass","../../../../Styles/styleVariables.sass","ViewBoard.module.css"],"names":[],"mappings":"AACA;EACI,6BAAA;EACA,UCiBoB;EDhBpB,oCAAA;EACA,UAAA;EACA,WAAA;AEAJ","file":"ViewBoard.module.css"}
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAC;EACF,QAAQ,EAAE,mBAAmB;EAC7B,IAAI,ECkBgB,IAAI;EDjBxB,gBAAgB,EAAE,kBAAe;EACjC,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;CAAG",
+    "sources": [
+        "ViewBoard.module.sass",
+        "../../../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "ViewBoard.module.css"
+}

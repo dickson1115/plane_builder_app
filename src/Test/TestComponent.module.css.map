@@ -1,1 +1,9 @@
-{"version":3,"sources":["TestComponent.module.sass","TestComponent.module.css"],"names":[],"mappings":"AACA;EACI,oBAAA;ACAJ;;ADEA;EACI,YAAA;EACA,gBAAA;ACCJ;;ADCA;EACI,cAAA;ACEJ;;ADAA;EACI,mDAAA;ACGJ;;ADDA;EACI,iBAAA;ACIJ","file":"TestComponent.module.css"}
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,MAAM,CAAC,CAAC,CAAC;EACL,UAAU,EAAE,QAAQ;CAAG;;AAE3B,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,MAAM;CAAG;;AAEvB,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,MAAM;CAAG;;AAErB,AAAA,QAAQ,AAAA,MAAM,CAAC;EACX,UAAU,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OAAO,CAAC,yBAAyB;CAAG;;AAE1D,AAAA,QAAQ,CAAC;EACL,YAAY,EAAE,GAAG;CAAG",
+    "sources": [
+        "TestComponent.module.sass"
+    ],
+    "names": [],
+    "file": "TestComponent.module.css"
+}

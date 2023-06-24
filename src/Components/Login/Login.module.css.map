@@ -1,1 +1,10 @@
-{"version":3,"sources":["Login.module.sass","../../Styles/styleVariables.sass","Login.module.css"],"names":[],"mappings":"AAYA;EACI,gCCVM;ACDV;;AFaA;EACI,kCCRS;EDST,yBCdM;ACIV;;AFYA;EACI,kCCZS;EDaT,yBClBM;ACSV;;AFWA;EACI,iCAAA;AERJ;;AFUA;EACI,oCAAA;EACA,4BAAA;AEPJ","file":"Login.module.css"}
+{
+    "version": 3,
+    "mappings": "AAYA,AAAA,OAAO,CAAC;EACJ,YAAY,ECVN,OAAkB;CDUC;;AAE7B,AAAA,YAAY,CAAC;EACT,WAAW,ECRF,qBAAqB;EDS9B,KAAK,ECdC,OAAkB;CDcN;;AAEtB,AAAA,YAAY,CAAC,CAAC,CAAC;EACX,WAAW,ECZF,qBAAqB;EDa9B,KAAK,EClBC,OAAkB;CDkBN;;AAEtB,AAAA,YAAY,CAAC;EACT,KAAK,EClBG,OAAe,CDkBL,UAAU;CAAG;;AAEnC,AAAA,aAAa,CAAC;EACV,KAAK,ECxBC,OAAkB,CDwBR,UAAU;EAC1B,SAAS,EAAE,iBAAiB;CAAG",
+    "sources": [
+        "Login.module.sass",
+        "../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "Login.module.css"
+}

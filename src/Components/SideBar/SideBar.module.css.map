@@ -1,1 +1,9 @@
-{"version":3,"sources":["SideBar.module.sass","SideBar.module.css"],"names":[],"mappings":"AACA;EACI,YAAA;EACA,kBAAA;EACA,MAAA;ACAJ","file":"SideBar.module.css"}
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,QAAQ,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;CAAG",
+    "sources": [
+        "SideBar.module.sass"
+    ],
+    "names": [],
+    "file": "SideBar.module.css"
+}

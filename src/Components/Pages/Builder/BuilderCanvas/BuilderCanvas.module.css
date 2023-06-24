@@ -1,5 +1,6 @@
 .canvas {
-  background-color: rgb(248, 240, 221);
+  background-color: #f8f0dd;
   overflow-clip-margin: content-box;
   overflow: clip;
-}/*# sourceMappingURL=BuilderCanvas.module.css.map */
+}
+/*# sourceMappingURL=BuilderCanvas.module.css.map */

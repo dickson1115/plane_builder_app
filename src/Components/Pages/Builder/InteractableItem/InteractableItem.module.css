@@ -21,12 +21,14 @@
   background-color: rgba(241, 232, 211, 0.9);
 }
 
-.interactableItem path {
+.interactableItem * {
   fill: rgb(248, 240, 221);
   stroke: rgb(79, 77, 72);
 }
 
-.interactableItem ellipse {
+/* .interactableItem ellipse {
   fill: rgb(251, 240, 217);
   stroke: rgb(79, 77, 72);
-}/*# sourceMappingURL=InteractableItem.module.css.map */
+} */
+
+/*# sourceMappingURL=InteractableItem.module.css.map */

@@ -1,1 +1,10 @@
-{"version":3,"sources":["App.sass","App.css"],"names":[],"mappings":"AACA;EACI,YAAA;ACAJ;;ADEA;EACI,0CAAA;ACCJ;;ADCA;EACI,+CAAA;EACA,iCAAA;ACEJ","file":"App.css"}
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,EAAE,IAAI,CAAC;EACP,MAAM,EAAE,IAAI;CAAG;;AAEnB,AAAA,KAAK,CAAC;EACF,WAAW,ECIE,kBAAkB,CDJF,UAAU;CAAG;;AAE9C,AAAA,KAAK,CAAC;EACF,gBAAgB,ECLV,OAAkB,CDKG,UAAU;EACrC,KAAK,ECHG,OAAe,CDGL,UAAU;CAAG",
+    "sources": [
+        "App.sass",
+        "Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "App.css"
+}

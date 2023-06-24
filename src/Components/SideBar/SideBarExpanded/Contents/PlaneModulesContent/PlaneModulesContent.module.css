@@ -1,33 +1,40 @@
 .svgButton:active {
-  border-color: rgb(79, 77, 72);
+  border-color: #4f4d48;
 }
 
 .svgButton:hover {
-  background: rgb(255, 248, 233);
+  background: #fff8e9;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .svgButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 1rem;
   border-color: transparent;
-  background: rgb(251, 240, 217);
+  background: #fbf0d9;
 }
 
 .btn:active {
-  background-color: rgb(255, 230, 186) !important;
+  background-color: #ffe6ba !important;
   outline-color: transparent !important;
   border-color: transparent !important;
 }
 
 .btnGroup {
-  background-color: rgb(255, 248, 233) !important;
+  background-color: #fff8e9 !important;
 }
 
 .btn.active {
-  background-color: rgb(251, 240, 217) !important;
+  background-color: #fbf0d9 !important;
 }
 
 .container.active {
@@ -40,5 +47,6 @@
 }
 
 .container path, ellipse {
-  stroke: rgb(79, 77, 72);
-}/*# sourceMappingURL=PlaneModulesContent.module.css.map */
+  stroke: #4f4d48;
+}
+/*# sourceMappingURL=PlaneModulesContent.module.css.map */

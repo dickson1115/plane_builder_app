@@ -1,7 +1,8 @@
 #sidebarCollapsed {
   min-width: 2rem;
   max-width: 2rem;
-  background: rgb(255, 248, 233);
+  background: #fff8e9;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   height: 100%;
   margin-left: -2rem;
@@ -19,7 +20,7 @@
 }
 
 .svgButton:hover {
-  background: rgb(251, 240, 217) !important;
+  background: #fbf0d9 !important;
 }
 
 .svgButton:active {
@@ -27,5 +28,6 @@
 }
 
 .svgButton.active {
-  background-color: rgb(251, 240, 217);
-}/*# sourceMappingURL=SideBarCollapsed.module.css.map */
+  background-color: #fbf0d9;
+}
+/*# sourceMappingURL=SideBarCollapsed.module.css.map */

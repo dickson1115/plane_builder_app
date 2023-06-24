@@ -1,1 +1,10 @@
-{"version":3,"sources":["BuilderCanvas.module.sass","../../../../Styles/styleVariables.sass","BuilderCanvas.module.css"],"names":[],"mappings":"AACA;EACE,oCCwBY;EDvBZ,iCAAA;EACA,cAAA;AEAF","file":"BuilderCanvas.module.css"}
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,OAAO,CAAC;EACN,gBAAgB,ECyBJ,OAAkB;EDxB9B,oBAAoB,EAAE,WAAW;EACjC,QAAQ,EAAE,IAAI;CAAG",
+    "sources": [
+        "BuilderCanvas.module.sass",
+        "../../../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "BuilderCanvas.module.css"
+}

@@ -1,10 +1,11 @@
 .sideBarExpanded {
   min-width: 10rem;
   max-width: 10rem;
-  background: rgb(251, 240, 217);
+  background: #fbf0d9;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-family: "BebasNeueProRegular";
-  color: rgb(79, 77, 72);
+  color: #4f4d48;
   margin-left: -12rem;
   position: absolute;
   height: 100%;
@@ -12,11 +13,12 @@
 
 .sideBarExpanded.active {
   margin-left: 2rem;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .headerBar {
-  background-color: rgb(255, 230, 186);
+  background-color: #ffe6ba;
 }
 
 .svgButton {
@@ -31,4 +33,5 @@
 .svgButton * {
   width: 1.2rem !important;
   height: 1.2rem !important;
-}/*# sourceMappingURL=SideBarExpanded.module.css.map */
+}
+/*# sourceMappingURL=SideBarExpanded.module.css.map */

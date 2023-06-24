@@ -3,6 +3,8 @@ import SideBar from "../../SideBar/SideBar";
 import BuilderCanvas from "./BuilderCanvas/BuilderCanvas";
 import ViewBoard from "./ViewBoard/ViewBoard";
 import * as constant from "./planeModules";
+import styles from "./Builder.module.css"
+import Content from "../Content";
 // import svgElements from "./SvgComponenet";
 const Builder = () => {
   const planeModules = constant.default;
@@ -315,8 +317,8 @@ const Builder = () => {
   };
 
   return (
-
-    < div className="builderPage" style={{ position: "relative", height: "100vh" }}>
+    <Content>
+    <div div className={styles.builderPage}>
       <ViewBoard disableCanvasDrag={disableCanvasDrag}>
         {
           ["front", "side", "top"].map((ele, index) =>
@@ -359,6 +361,7 @@ const Builder = () => {
 
 
     </div>
+         </Content>
   );
 };
 

@@ -1,22 +1,23 @@
 .header {
-  border-color: rgb(255, 248, 233);
+  border-color: #fff8e9;
 }
 
 .login_modal {
   font-family: "BebasNeueProRegular";
-  color: rgb(255, 248, 233);
+  color: #fff8e9;
 }
 
 .login_modal * {
   font-family: "BebasNeueProRegular";
-  color: rgb(255, 248, 233);
+  color: #fff8e9;
 }
 
 .loginButton {
-  color: rgb(79, 77, 72) !important;
+  color: #4f4d48 !important;
 }
 
 .signupButton {
-  color: rgb(255, 248, 233) !important;
+  color: #fff8e9 !important;
   font-size: 0.8rem !important;
-}/*# sourceMappingURL=Login.module.css.map */
+}
+/*# sourceMappingURL=Login.module.css.map */

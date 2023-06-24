@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,KAAK;CAAG",
+    "sources": [
+        "Builder.module.sass",
+        "../../../Styles/styleVariables.sass"
+    ],
+    "names": [],
+    "file": "Builder.module.css"
+}

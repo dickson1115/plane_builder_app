@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import NavBar from '../NavigationBar/NavigationBar';
 import axios from 'axios';
+import Content from './Content';
 const About = () => {
 
   useEffect(() => {
@@ -15,10 +16,12 @@ const About = () => {
   }, [])
   
   return (
+    <Content>
     <div>
       {/* <NavBar /> */}
       <div>About</div>
     </div>
+    </Content>
 
   )
 };
